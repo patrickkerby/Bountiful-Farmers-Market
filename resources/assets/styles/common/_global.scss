@@ -1,8 +1,8 @@
 //Typography
 h2 {
-  font-family: "FilsonProBlack", Arial, Helvetica, sans-serif;
+  font-family: filson-pro, Arial, Helvetica, sans-serif;
   font-size: 47px;
-  font-weight: normal;
+  font-weight: 900;
   color: #007276;
   letter-spacing: 0;
   text-align: center;
@@ -11,8 +11,8 @@ h2 {
 }
 
 h3 {
-  font-family: "FilsonProRegular", Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-family: filson-pro, Arial, Helvetica, sans-serif;
+  font-weight: 400;
   font-size: 20px;
   color: #92bc5c;
   letter-spacing: 0;
@@ -22,8 +22,9 @@ h3 {
 }
 
 p {
-  font-family: "FilsonProRegular", Arial, Helvetica, sans-serif;
+  font-family: filson-pro, Arial, Helvetica, sans-serif;
   font-size: 16px;
+  font-weight: 400;
   color: #888;
   letter-spacing: 0;
   text-align: center;

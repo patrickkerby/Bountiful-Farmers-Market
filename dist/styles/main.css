@@ -16304,9 +16304,9 @@ body.chocolat-open > .chocolat-content {
 /* line 2, resources/assets/styles/common/_global.scss */
 
 h2 {
-  font-family: "FilsonProBlack", Arial, Helvetica, sans-serif;
+  font-family: filson-pro, Arial, Helvetica, sans-serif;
   font-size: 47px;
-  font-weight: normal;
+  font-weight: 900;
   color: #007276;
   letter-spacing: 0;
   text-align: center;
@@ -16317,8 +16317,8 @@ h2 {
 /* line 13, resources/assets/styles/common/_global.scss */
 
 h3 {
-  font-family: "FilsonProRegular", Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-family: filson-pro, Arial, Helvetica, sans-serif;
+  font-weight: 400;
   font-size: 20px;
   color: #92bc5c;
   letter-spacing: 0;
@@ -16330,8 +16330,9 @@ h3 {
 /* line 24, resources/assets/styles/common/_global.scss */
 
 p {
-  font-family: "FilsonProRegular", Arial, Helvetica, sans-serif;
+  font-family: filson-pro, Arial, Helvetica, sans-serif;
   font-size: 16px;
+  font-weight: 400;
   color: #888;
   letter-spacing: 0;
   text-align: center;
@@ -16339,27 +16340,27 @@ p {
   margin-bottom: 40px;
 }
 
-/* line 34, resources/assets/styles/common/_global.scss */
+/* line 35, resources/assets/styles/common/_global.scss */
 
 hr {
   border: 2px solid rgba(122, 122, 122, 0.1);
   margin: 0 21% 50px 21%;
 }
 
-/* line 40, resources/assets/styles/common/_global.scss */
+/* line 41, resources/assets/styles/common/_global.scss */
 
 a.btn-secondary,
 .search-form a.search-submit {
   color: #fff;
 }
 
-/* line 44, resources/assets/styles/common/_global.scss */
+/* line 45, resources/assets/styles/common/_global.scss */
 
 a.btn-link {
   color: #92bc5c;
 }
 
-/* line 50, resources/assets/styles/common/_global.scss */
+/* line 51, resources/assets/styles/common/_global.scss */
 
 .small p {
   font-size: 14px;
@@ -16368,7 +16369,7 @@ a.btn-link {
   padding: 0;
 }
 
-/* line 58, resources/assets/styles/common/_global.scss */
+/* line 59, resources/assets/styles/common/_global.scss */
 
 .logo {
   width: 160px;
@@ -16511,9 +16512,9 @@ a.btn-link {
 
 a.btn-secondary,
 .search-form a.search-submit {
-  font-family: "FilsonProBold", Arial, Helvetica, sans-serif;
+  font-family: filson-pro, Arial, Helvetica, sans-serif;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 700;
   border-radius: 30px;
   padding: 0.8rem 1.25rem 0.6rem 1.25rem;
 }
