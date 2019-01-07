@@ -1,0 +1,52 @@
+.words {
+  align-self: center;
+  height: 100vh;
+  overflow-y: scroll;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    overflow: visible;
+  }
+
+  h2,
+  h3,
+  h4,
+  p,
+  hr,
+  div {
+    padding: 0 21%;
+  }
+
+  .small {
+    padding-bottom: 60px;
+
+    p {
+      padding: 0;
+    }
+  }
+}
+
+.gallery {
+  overflow: hidden;
+
+  @include media-breakpoint-down(sm) {
+    height: 50vh !important;
+  }
+}
+
+a {
+  &.btn-secondary {
+    font-family: "FilsonProBold", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 30px;
+    padding: 0.8rem 1.25rem 0.6rem 1.25rem;
+  }
+}
+
+.chocolat-top {
+  display: none;
+}

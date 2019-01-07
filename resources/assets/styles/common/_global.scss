@@ -1,0 +1,62 @@
+//Typography
+h2 {
+  font-family: "FilsonProBlack", Arial, Helvetica, sans-serif;
+  font-size: 47px;
+  font-weight: normal;
+  color: #007276;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 49px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-family: "FilsonProRegular", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #92bc5c;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+p {
+  font-family: "FilsonProRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #888;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+hr {
+  border: 2px solid rgba(122, 122, 122, 0.1);
+  margin: 0 21% 50px 21%;
+}
+
+a {
+  &.btn-secondary {
+    color: #fff;
+  }
+
+  &.btn-link {
+    color: #92bc5c;
+  }
+}
+
+.small {
+  p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 19px;
+    padding: 0;
+  }
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+  margin: 4rem 0 3rem 0;
+}
