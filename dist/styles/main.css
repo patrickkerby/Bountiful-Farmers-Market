@@ -16360,7 +16360,16 @@ a.btn-link {
   color: #92bc5c;
 }
 
-/* line 51, resources/assets/styles/common/_global.scss */
+/* line 49, resources/assets/styles/common/_global.scss */
+
+a.light {
+  background-color: #e7f0da;
+  color: #92bc5c;
+  border-color: #e7f0da;
+  font-size: 14px !important;
+}
+
+/* line 58, resources/assets/styles/common/_global.scss */
 
 .small p {
   font-size: 14px;
@@ -16369,7 +16378,7 @@ a.btn-link {
   padding: 0;
 }
 
-/* line 59, resources/assets/styles/common/_global.scss */
+/* line 66, resources/assets/styles/common/_global.scss */
 
 .logo {
   width: 160px;

@@ -45,6 +45,13 @@ a {
   &.btn-link {
     color: #92bc5c;
   }
+
+  &.light {
+    background-color: #e7f0da;
+    color: #92bc5c;
+    border-color: #e7f0da;
+    font-size: 14px !important;
+  }
 }
 
 .small {
