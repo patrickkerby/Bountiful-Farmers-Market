@@ -7,6 +7,7 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
     @php do_action('get_header') @endphp
+    @include('partials.header')
     <div class="wrap" role="document">
       <div class="content">
         <main class="main row no-gutters">
@@ -22,46 +23,5 @@
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp
-    <script>
-          (function($){
-            $(document).ready( function(){
-                var instance = $('#container3').Chocolat({
-                    loop: true,
-                    images : [
-                      <?php
-                        if( have_rows('renderings') ):?>
-                          <?php while ( have_rows('renderings') ) : the_row();  
-                            $image = get_sub_field('image');
-                          ?>
-                        {src : '<?php echo $image; ?>'},                        
-                        <?php endwhile; ?>
-                        <?php else :
-                        endif; ?>            
-                      ],
-                    imageSize : 'cover',
-                    container : '#container3',
-                    afterMarkup: function () {
-                        console.log('afterMarkup hook is called')
-                    },
-                    afterImageLoad: function () {
-                        console.log('afterImageLoad hook is called')
-                    },
-                    afterInitialize: function () {
-                        console.log('afterInitialize hook is called')
-                    },
-                    zoomedPaddingX: function (imgWidth, canvasWidth) {
-                        // add a padding around the zoomed image
-                        // default to 0
-                        return canvasWidth / 10;
-                    },
-                    zoomedPaddingY: function (imgHeight, canvasHeight) {
-                        // add a padding around the zoomed image
-                        // default to 0
-                        return canvasHeight / 10;
-                    }
-                }).data('chocolat').api().open();
-              })    
-            })( jQuery );
-        </script>
   </body>
 </html>
