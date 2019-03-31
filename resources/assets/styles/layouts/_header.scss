@@ -5,3 +5,61 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+header {
+  svg {
+    height: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.brand {
+  margin: 3rem 0 2rem 0;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $bountiful-green;
+    line-height: 24px;
+    max-width: 115px;
+  }
+
+  h2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #007276;
+    margin: 0;
+  }
+}
+
+.nav-primary {
+  display: flex !important;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  .menu-item a {
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    color: $bountiful-green;
+    line-height: 17px;
+    width: auto;
+    max-width: 170px;
+    border-right: 2px dotted $bountiful-green;
+  }
+
+  .menu-item:last-child a {
+    border: none;
+    padding-right: none;
+  }
+}
+
+.banner {
+  height: 700px;
+  background-position: center center;
+  background-size: cover;
+}

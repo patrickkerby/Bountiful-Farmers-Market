@@ -1,17 +1,26 @@
 //Typography
-h2 {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+div,
+li {
   font-family: filson-pro, Arial, Helvetica, sans-serif;
-  font-size: 47px;
+}
+
+h2 {
+  font-size: 33px;
   font-weight: 900;
+  line-height: 40px;
   color: #007276;
   letter-spacing: 0;
-  text-align: center;
-  line-height: 49px;
   margin-bottom: 40px;
 }
 
 h3 {
-  font-family: filson-pro, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #92bc5c;
@@ -22,14 +31,12 @@ h3 {
 }
 
 p {
-  font-family: filson-pro, Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
-  color: #888;
   letter-spacing: 0;
-  text-align: center;
-  line-height: 32px;
+  line-height: 39px;
   margin-bottom: 40px;
+  color: #435454;
 }
 
 hr {
@@ -67,4 +74,8 @@ a {
   width: 160px;
   height: auto;
   margin: 4rem 0 3rem 0;
+}
+
+section {
+  padding: 4rem 0;
 }

@@ -10,7 +10,7 @@
     @include('partials.header')
     <div class="wrap" role="document">
       <div class="content">
-        <main class="main row no-gutters">
+        <main class="main container-fluid">
           @yield('content')
         </main>
         @if (App\display_sidebar())
