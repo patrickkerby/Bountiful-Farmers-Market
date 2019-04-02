@@ -6,7 +6,6 @@
 @section('content')
   @while(have_posts()) @php the_post() @endphp
 
-  <section>        
     @php    
       // This loop requires a /partials template that is named exactly the same as the layout title in ACF flexible content page builder
 
@@ -31,8 +30,6 @@
       
       endif;        
     @endphp
-
-  </section>
 
   @endwhile
 @endsection

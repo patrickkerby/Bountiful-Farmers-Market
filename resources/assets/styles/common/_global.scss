@@ -1,3 +1,7 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
 //Typography
 h1,
 h2,
@@ -12,31 +16,36 @@ li {
 }
 
 h2 {
-  font-size: 33px;
+  font-size: 36px;
   font-weight: 900;
   line-height: 40px;
-  color: #007276;
+  color: $bountiful-turquoise;
   letter-spacing: 0;
   margin-bottom: 40px;
 }
 
 h3 {
-  font-weight: 400;
-  font-size: 20px;
-  color: #92bc5c;
+  font-size: 33px;
+  font-weight: 700;
+  color: $bountiful-green;
   letter-spacing: 0;
-  text-align: center;
-  line-height: 32px;
-  margin-bottom: 40px;
+  line-height: 40px;
+  margin-bottom: 25px;
 }
 
-p {
+.content p {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 39px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   color: #435454;
+
+  @include media-breakpoint-down(md) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
 }
 
 hr {
@@ -45,6 +54,10 @@ hr {
 }
 
 a {
+  &:hover {
+    text-decoration: none;
+  }
+
   &.btn-secondary {
     color: #fff;
   }
@@ -76,6 +89,27 @@ a {
   margin: 4rem 0 3rem 0;
 }
 
-section {
-  padding: 4rem 0;
+.content {
+  section {
+    padding: 7rem 0;
+
+    &.beige {
+      background: $bountiful-beige;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  a {
+    padding-bottom: 4px;
+    border-bottom: solid 2px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

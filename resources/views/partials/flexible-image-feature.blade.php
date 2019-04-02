@@ -4,11 +4,11 @@
     $background = get_sub_field('background');
 @endphp
 
-<section class="intro-content row {{ $alignment }} {{ $background }}">
-    <div class="col-md-6">
+<section class="image-feature row {{ $alignment }} {{ $background }} justify-content-center">
+    <div class="col-md-5">
       @php the_sub_field('content'); @endphp
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5">
 
       @php 
 
@@ -33,11 +33,7 @@
 
         @php endif; @endphp
 
-        <a href="{{ $url }}" title="{{ $title }}">
-
           <img src="{{ $thumb }}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" />
-
-        </a>
 
         @php if( $caption ): @endphp
 

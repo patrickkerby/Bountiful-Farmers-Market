@@ -1,0 +1,94 @@
+//Gallery
+.content section.gallery {
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background: url(../images/flag-top.svg) no-repeat top center;
+    background-size: contain;
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background: url(../images/flag-bottom.svg) no-repeat bottom center;
+    background-size: contain;
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 100px;
+  }
+
+  .image {
+    background-color: rgba(146, 188, 92, 1);
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      -webkit-filter: grayscale(100%) contrast(200%);
+      filter: grayscale(100%) contrast(200%);
+      opacity: 0.08;
+      border: none;
+      transition: all 0.6s ease-in-out;
+    }
+
+    a:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+      opacity: 1;
+      transition: all 0.8s ease-in-out;
+    }
+  }
+
+  .grid-layout {
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-flow: row dense;
+    grid-auto-rows: minmax(315px, auto);
+  }
+
+  .grid-item {
+    background-size: cover;
+    background-position: center bottom;
+    grid-column-end: span 1;
+
+    @include media-breakpoint-down(md) {
+      grid-column-end: span 2;
+    }
+
+    @include media-breakpoint-down(sm) {
+      grid-column-end: span 2;
+    }
+
+    @include media-breakpoint-down(xs) {
+      grid-column-end: span 4;
+    }
+  }
+
+  .grid-item:nth-child(5n) {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+
+    @include media-breakpoint-down(sm) {
+      min-height: auto;
+    }
+  }
+
+  .grid-item:nth-child(8n) {
+    grid-column-end: span 2;
+  }
+}

@@ -17,7 +17,7 @@ header {
 }
 
 .brand {
-  margin: 3rem 0 2rem 0;
+  margin: 3rem 0 0 0;
 
   h1 {
     font-size: 24px;
@@ -32,6 +32,7 @@ header {
     font-weight: 500;
     color: #007276;
     margin: 0;
+    line-height: 18px;
   }
 }
 
@@ -62,4 +63,28 @@ header {
   height: 700px;
   background-position: center center;
   background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background: url(../images/flag-top.svg) no-repeat top center;
+    background-size: contain;
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background: url(../images/flag-bottom.svg) no-repeat bottom center;
+    background-size: contain;
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 100px;
+  }
 }

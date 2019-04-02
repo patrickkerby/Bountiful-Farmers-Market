@@ -1,3 +1,36 @@
+label {
+  color: $bountiful-green;
+  font-size: 16px;
+}
+
+input,
+textarea {
+  background: $bountiful-beige;
+  border: none;
+  padding: 1rem;
+  margin: 0 0 1.5rem 0;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  background: none;
+  font-size: 20px;
+  color: $bountiful-green;
+  padding: 0 0 6px 0;
+  border-bottom: solid 2px $bountiful-green;
+  display: flex;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+form {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
+
 /** Search form */
 .search-form {
   @extend .form-inline;
@@ -16,4 +49,17 @@
 .search-form .search-submit {
   @extend .btn;
   @extend .btn-secondary;
+}
+
+.gform_confirmation_wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.gform_confirmation_message {
+  padding: 3rem;
+  color: $bountiful-green;
+  font-weight: 800;
+  font-size: 26px;
 }

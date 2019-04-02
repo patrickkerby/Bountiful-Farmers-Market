@@ -9,7 +9,7 @@ $is_sidebar = get_sub_field('sidebar_choice');
   </div>
   
   @php if( have_rows('sidebar') ): @endphp
-  <div class="col-md-3 offset-md-1">
+  <div class="sidebar col-md-4">
     <ul>
     @php while ( have_rows('sidebar') ) : the_row();
       $list_item = get_sub_field('list_item');

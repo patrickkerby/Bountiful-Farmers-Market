@@ -1,0 +1,24 @@
+section.full-image {
+  background-position: center center;
+  background-size: cover;
+  padding: 13rem 0 11rem 0;
+
+  h2,
+  h3,
+  h4,
+  p,
+  a,
+  li {
+    color: #fff;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 46px;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}

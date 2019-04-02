@@ -1,0 +1,30 @@
+.intro-content {
+  .sidebar {
+    ul {
+      list-style-type: none;
+
+      li {
+        color: $bountiful-green;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        padding: 1.5rem 0;
+        border-bottom: 2px dashed $bountiful-green;
+      }
+
+      li:first-of-type {
+        padding: 0 0 1.5rem 0;
+      }
+    }
+  }
+}
+
+.intro-content p {
+  font-size: 22px;
+  line-height: 36px;
+  color: $bountiful-turquoise;
+}
+
+a {
+  color: $bountiful-rose;
+}

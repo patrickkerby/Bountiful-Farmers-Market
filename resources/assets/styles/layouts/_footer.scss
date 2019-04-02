@@ -1,0 +1,57 @@
+footer {
+  align-content: center;
+  padding: 5rem 0 7rem 0;
+  position: relative;
+
+  div {
+    display: flex;
+    justify-content: center;
+
+    div {
+      flex-direction: column;
+    }
+  }
+
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  p,
+  address,
+  a {
+    font-size: 18px;
+    font-weight: 600;
+    color: $bountiful-turquoise;
+    line-height: 19px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      line-height: 17px;
+    }
+  }
+
+  a:hover {
+    color: $bountiful-rose;
+  }
+
+  .nav-primary ul {
+    flex-direction: column;
+  }
+
+  .nav-primary .menu-item a {
+    max-width: none;
+    border-right: none;
+    border-bottom: dotted 2px $bountiful-green;
+    padding: 2rem 0;
+  }
+
+  svg {
+    height: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
