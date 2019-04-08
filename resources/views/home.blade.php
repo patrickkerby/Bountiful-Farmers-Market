@@ -32,4 +32,5 @@
     @endphp
 
   @endwhile
+  @include('partials.mailchimp')
 @endsection

@@ -3,6 +3,10 @@ section.full-image {
   background-size: cover;
   padding: 13rem 0 11rem 0;
 
+  @include media-breakpoint-down(sm) {
+    padding: 8rem 0 10rem 0;
+  }
+
   h2,
   h3,
   h4,

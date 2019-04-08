@@ -5,13 +5,13 @@
 
 <footer class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-sm-4">
+    <div class="col-sm-5 col-md-4">
         @php the_field('address', 'option'); @endphp
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-5 col-md-4">
       <img src="{{ $footer_logo }}" />
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-5 col-md-4 d-none d-md-flex">
       <nav class="nav-primary">
         @if (has_nav_menu('primary_navigation'))
           {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}

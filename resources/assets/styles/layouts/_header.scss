@@ -34,12 +34,19 @@ header {
     margin: 0;
     line-height: 18px;
   }
+
+  @include media-breakpoint-down(sm) {
+    margin: 3rem 0 1rem 0;
+  }
 }
 
 .nav-primary {
-  display: flex !important;
   align-items: center;
   flex-direction: row-reverse;
+
+  ul {
+    flex-wrap: nowrap;
+  }
 
   .menu-item a {
     display: inline-flex;
@@ -51,6 +58,16 @@ header {
     width: auto;
     max-width: 170px;
     border-right: 2px dotted $bountiful-green;
+
+    @include media-breakpoint-down(sm) {
+      padding: 1rem 1rem;
+      font-size: 16px;
+    }
+  }
+
+  .menu-get-in-touch {
+    max-width: 120px;
+    padding-right: 0;
   }
 
   .menu-item:last-child a {
@@ -64,6 +81,20 @@ header {
   background-position: center center;
   background-size: cover;
   position: relative;
+  overflow: hidden;
+
+  @include media-breakpoint-down(sm) {
+    height: 450px;
+
+    img {
+      max-width: 300px;
+    }
+  }
+
+  img {
+    -webkit-filter: drop-shadow(0 0 15px #123534);
+    filter: drop-shadow(0 0 15px #123534);
+  }
 
   &::before {
     content: "";
@@ -72,7 +103,7 @@ header {
     background-size: contain;
     position: absolute;
     top: -2px;
-    width: 100%;
+    width: 105%;
     height: 100px;
     z-index: 1;
   }
@@ -84,7 +115,63 @@ header {
     background-size: contain;
     position: absolute;
     bottom: -2px;
-    width: 100%;
+    width: 105%;
     height: 100px;
+  }
+}
+
+//Hamburger
+.hamburger {
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
+  z-index: 10;
+
+  &.is-active {
+    position: fixed;
+  }
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after,
+.hamburger-inner:focus {
+  background-color: $bountiful-green;
+  outline: none;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+//Mobile Nav
+.nav-mobile {
+  background: $bountiful-rose;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  transition: all 0.6 ease-in-out;
+
+  ul.nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    text-align: center;
+
+    li.menu-item {
+      margin: 0;
+
+      a {
+        @extend h2;
+
+        color: #fff;
+        margin: 0;
+        padding: 15px;
+      }
+    }
   }
 }

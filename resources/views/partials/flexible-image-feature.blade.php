@@ -5,7 +5,7 @@
 @endphp
 
 <section class="image-feature row {{ $alignment }} {{ $background }} justify-content-center">
-    <div class="col-md-5">
+    <div class="col-sm-10 col-md-5">
       @php the_sub_field('content'); @endphp
     </div>
     <div class="col-md-5">

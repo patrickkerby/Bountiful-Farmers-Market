@@ -2,6 +2,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body.admin-bar {
+  position: relative;
+}
+
 //Typography
 h1,
 h2,
@@ -41,7 +45,7 @@ h3 {
   margin-bottom: 35px;
   color: #435454;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 25px;
@@ -83,6 +87,10 @@ a {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 .logo {
   width: 160px;
   height: auto;
@@ -92,6 +100,10 @@ a {
 .content {
   section {
     padding: 7rem 0;
+
+    @include media-breakpoint-down(sm) {
+      padding: 4rem 0;
+    }
 
     &.beige {
       background: $bountiful-beige;
@@ -111,5 +123,41 @@ a {
     &:hover {
       text-decoration: none;
     }
+  }
+}
+
+//Hamburger Nav
+.nav-mobile {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+body.is-active {
+  position: fixed;
+}
+
+.modal-dialog {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+  padding: 4rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 10rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 10rem 15rem;
   }
 }

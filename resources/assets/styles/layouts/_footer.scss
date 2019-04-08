@@ -10,12 +10,21 @@ footer {
     div {
       flex-direction: column;
     }
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
   }
 
   img {
     width: 100%;
     max-width: 300px;
     height: auto;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(sm) {
+      margin: 2rem auto 0 auto;
+    }
   }
 
   p,
@@ -36,8 +45,18 @@ footer {
     color: $bountiful-rose;
   }
 
+  .nav-primary {
+    justify-items: center;
+    flex-direction: column;
+  }
+
   .nav-primary ul {
     flex-direction: column;
+
+    @include media-breakpoint-down(md) {
+      align-items: center;
+      text-align: center;
+    }
   }
 
   .nav-primary .menu-item a {

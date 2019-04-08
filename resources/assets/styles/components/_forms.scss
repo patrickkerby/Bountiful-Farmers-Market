@@ -10,6 +10,7 @@ textarea {
   padding: 1rem;
   margin: 0 0 1.5rem 0;
   font-size: 16px;
+  width: 100%;
 }
 
 input[type=submit] {
@@ -21,6 +22,7 @@ input[type=submit] {
   display: flex;
   align-self: flex-start;
   cursor: pointer;
+  width: auto;
 }
 
 form {

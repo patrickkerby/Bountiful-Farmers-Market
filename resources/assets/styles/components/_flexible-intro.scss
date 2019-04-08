@@ -2,6 +2,7 @@
   .sidebar {
     ul {
       list-style-type: none;
+      padding: 0;
 
       li {
         color: $bountiful-green;
@@ -16,6 +17,16 @@
         padding: 0 0 1.5rem 0;
       }
     }
+
+    @include media-breakpoint-down(sm) {
+      ul li {
+        font-size: 18px;
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      margin: 3rem 0 0 0;
+    }
   }
 }
 
@@ -23,8 +34,21 @@
   font-size: 22px;
   line-height: 36px;
   color: $bountiful-turquoise;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 19px;
+    line-height: 32px;
+  }
 }
 
 a {
   color: $bountiful-rose;
+}
+
+@include media-breakpoint-down(sm) {
+  h2 {
+    font-size: 30px;
+    line-break: 35px;
+    margin-bottom: 25px;
+  }
 }

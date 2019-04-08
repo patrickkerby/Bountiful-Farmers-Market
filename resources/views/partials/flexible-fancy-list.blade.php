@@ -16,7 +16,7 @@
 
 
 <section class="fancy-list row overlap-{{ $overlap }} justify-content-center">
-  <div class="col-md-10">
+  <div class="col-10">
     <h4>{{ $title }}</h4>
     @php
 

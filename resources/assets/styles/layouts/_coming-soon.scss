@@ -11,15 +11,6 @@
     overflow: visible;
   }
 
-  h2,
-  h3,
-  h4,
-  p,
-  hr,
-  div {
-    padding: 0 21%;
-  }
-
   .small {
     padding-bottom: 60px;
 
@@ -29,21 +20,23 @@
   }
 }
 
-.gallery {
-  overflow: hidden;
+.coming-soon {
+  .gallery {
+    overflow: hidden;
 
-  @include media-breakpoint-down(sm) {
-    height: 50vh !important;
+    @include media-breakpoint-down(sm) {
+      height: 50vh !important;
+    }
   }
-}
 
-a {
-  &.btn-secondary {
-    font-family: filson-pro, Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 30px;
-    padding: 0.8rem 1.25rem 0.6rem 1.25rem;
+  a {
+    &.btn-secondary {
+      font-family: filson-pro, Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 30px;
+      padding: 0.8rem 1.25rem 0.6rem 1.25rem;
+    }
   }
 }
 
