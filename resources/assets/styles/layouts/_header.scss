@@ -151,7 +151,7 @@ button:focus {
   width: 100%;
   height: 100vh;
   z-index: 5;
-  transition: all 0.6 ease-in-out;
+  transition: display 0.6 ease-in-out;
 
   ul.nav {
     display: flex;

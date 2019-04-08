@@ -7135,6 +7135,11 @@ Router.prototype.loadEvents = function loadEvents () {
       $('.nav-mobile').toggleClass('is-active');
       $('body').toggleClass('is-active');
     });
+    $('.menu-item').click(function(){
+      $('body').removeClass('is-active');
+      $('.nav-mobile').removeClass('is-active');
+      $('.hamburger').removeClass('is-active');
+    });
   },
   finalize: function finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
