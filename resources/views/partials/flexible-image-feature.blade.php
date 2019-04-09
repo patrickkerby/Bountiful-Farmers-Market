@@ -33,7 +33,7 @@
 
         @php endif; @endphp
 
-          <img src="{{ $thumb }}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" />
+          <img data-src="{{ $thumb }}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" class="lazyload" />
 
         @php if( $caption ): @endphp
 

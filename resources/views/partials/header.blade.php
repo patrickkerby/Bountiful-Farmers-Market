@@ -29,6 +29,6 @@
     </nav>
   </div>
   <div class="banner row justify-content-center" style="background-image: radial-gradient(50% 55%, rgba(0,114,118,0.41) 37%, rgba(0,114,118,0.06) 64%), url('{{ $hero }}');">
-    <img src="{{$logo}}" />  
+    <img data-src="{{$logo}}" alt="Bountiful Farmers' Market" class="lazyload" />  
   </div> 	        				        			    
 </header>
