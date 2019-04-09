@@ -2,6 +2,7 @@
 import 'jquery';
 import 'slick-carousel/slick/slick.min.js';
 import 'slick-lightbox/dist/slick-lightbox.min.js';
+import 'lazysizes/lazysizes.js';
 
 // Import everything from autoload
 import './autoload/**/*'
