@@ -19,7 +19,7 @@
   </button>
   <div class="row">
     <div class="brand col-sm-4">
-      <h1 class="page-title"><?php the_title(); ?></h1>
+      <h1 class="page-title">@php echo esc_html( get_bloginfo( 'name' ) ); @endphp</h1>
       <h2>Your Multi-day Indoor Farmers’ Market in Edmonton.</h2>
     </div>
     <nav class="nav-primary d-none d-sm-flex col-sm-8">
@@ -28,7 +28,13 @@
       @endif
     </nav>
   </div>
-  <div class="banner row justify-content-center" style="background-image: radial-gradient(50% 55%, rgba(0,114,118,0.41) 37%, rgba(0,114,118,0.06) 64%), url('{{ $hero }}');">
-    <img data-src="{{$logo}}" alt="Bountiful Farmers' Market" class="lazyload" />  
-  </div> 	        				        			    
+  @if ($hero)
+    <div class="banner row justify-content-center" style="background-image: radial-gradient(50% 55%, rgba(33,59,60,0.41) 37%, rgba(33,59,60,0.06) 64%), url('{{ $hero }}');">
+      <img data-src="{{$logo}}" alt="Bountiful Farmers' Market" class="lazyload" />  
+    </div>
+  @else
+    <div class="banner-small row justify-content-center">
+        @include('partials.page-header')  
+    </div>
+  @endif	        				        			    
 </header>
