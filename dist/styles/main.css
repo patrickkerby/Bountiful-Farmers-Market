@@ -19513,6 +19513,35 @@ header svg {
   overflow: hidden;
 }
 
+/* line 86, resources/assets/styles/layouts/_header.scss */
+
+.banner.banner-sm {
+  height: auto;
+  background: #e9725d;
+  padding: 3rem 0;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* line 93, resources/assets/styles/layouts/_header.scss */
+
+.banner.banner-sm .page-header {
+  width: 100%;
+  text-align: left;
+}
+
+/* line 97, resources/assets/styles/layouts/_header.scss */
+
+.banner.banner-sm .page-header h1 {
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 700;
+  width: 10rem;
+  text-align: left;
+  font-size: 54px;
+  line-height: 54px;
+}
+
 @media (max-width: 767.98px) {
   /* line 79, resources/assets/styles/layouts/_header.scss */
 
@@ -19520,21 +19549,21 @@ header svg {
     height: 450px;
   }
 
-  /* line 89, resources/assets/styles/layouts/_header.scss */
+  /* line 112, resources/assets/styles/layouts/_header.scss */
 
   .banner img {
     max-width: 300px;
   }
 }
 
-/* line 94, resources/assets/styles/layouts/_header.scss */
+/* line 117, resources/assets/styles/layouts/_header.scss */
 
 .banner img {
   -webkit-filter: drop-shadow(0 0 15px #21302f);
   filter: drop-shadow(0 0 15px #21302f);
 }
 
-/* line 99, resources/assets/styles/layouts/_header.scss */
+/* line 122, resources/assets/styles/layouts/_header.scss */
 
 .banner::before {
   content: "";
@@ -19548,7 +19577,7 @@ header svg {
   z-index: 1;
 }
 
-/* line 111, resources/assets/styles/layouts/_header.scss */
+/* line 134, resources/assets/styles/layouts/_header.scss */
 
 .banner::after {
   content: "";
@@ -19561,7 +19590,7 @@ header svg {
   height: 100px;
 }
 
-/* line 124, resources/assets/styles/layouts/_header.scss */
+/* line 147, resources/assets/styles/layouts/_header.scss */
 
 .hamburger {
   position: absolute;
@@ -19570,13 +19599,13 @@ header svg {
   z-index: 10;
 }
 
-/* line 130, resources/assets/styles/layouts/_header.scss */
+/* line 153, resources/assets/styles/layouts/_header.scss */
 
 .hamburger.is-active {
   position: fixed;
 }
 
-/* line 135, resources/assets/styles/layouts/_header.scss */
+/* line 158, resources/assets/styles/layouts/_header.scss */
 
 .hamburger-inner,
 .hamburger-inner::before,
@@ -19586,13 +19615,13 @@ header svg {
   outline: none;
 }
 
-/* line 143, resources/assets/styles/layouts/_header.scss */
+/* line 166, resources/assets/styles/layouts/_header.scss */
 
 button:focus {
   outline: none !important;
 }
 
-/* line 148, resources/assets/styles/layouts/_header.scss */
+/* line 171, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile {
   background: #e9725d;
@@ -19605,7 +19634,7 @@ button:focus {
   transition: display 0.6 ease-in-out;
 }
 
-/* line 156, resources/assets/styles/layouts/_header.scss */
+/* line 179, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile ul.nav {
   display: -webkit-box;
@@ -19624,13 +19653,13 @@ button:focus {
   text-align: center;
 }
 
-/* line 165, resources/assets/styles/layouts/_header.scss */
+/* line 188, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile ul.nav li.menu-item {
   margin: 0;
 }
 
-/* line 168, resources/assets/styles/layouts/_header.scss */
+/* line 191, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile ul.nav li.menu-item a {
   color: #fff;

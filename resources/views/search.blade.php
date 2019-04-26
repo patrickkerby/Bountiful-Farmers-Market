@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
+
+<section class="row justify-content-center">
 
   @if (!have_posts())
     <div class="alert alert-warning">
@@ -13,6 +14,8 @@
   @while(have_posts()) @php the_post() @endphp
     @include('partials.content-search')
   @endwhile
+
+</section>
 
   {!! get_the_posts_navigation() !!}
 @endsection

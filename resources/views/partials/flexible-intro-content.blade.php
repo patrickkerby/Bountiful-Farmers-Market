@@ -4,7 +4,7 @@ $is_sidebar = get_sub_field('sidebar_choice');
 @endphp
 
 <section class="intro-content row">
-  @if( have_rows('sidebar') )
+  {{-- @if( have_rows('sidebar') ) --}}
     <div class="col-sm-8 col-md-6 offset-md-1">
       @php the_sub_field('content'); @endphp
     </div>
@@ -18,10 +18,10 @@ $is_sidebar = get_sub_field('sidebar_choice');
       @endwhile
       </ul>
     </div>
-  @else 
+  {{-- @else 
     <div class="col-sm-8 col-md-8 offset-md-2">
       @php the_sub_field('content'); @endphp
     </div>
-  @endif
+  @endif --}}
 
 </section>
