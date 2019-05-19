@@ -18683,26 +18683,37 @@ hr {
   margin: 0 21% 50px 21%;
 }
 
-/* line 61, resources/assets/styles/common/_global.scss */
+/* line 60, resources/assets/styles/common/_global.scss */
+
+a {
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 63, resources/assets/styles/common/_global.scss */
 
 a:hover {
   text-decoration: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-/* line 65, resources/assets/styles/common/_global.scss */
+/* line 68, resources/assets/styles/common/_global.scss */
 
 a.btn-secondary,
 .search-form a.search-submit {
   color: #fff;
 }
 
-/* line 69, resources/assets/styles/common/_global.scss */
+/* line 72, resources/assets/styles/common/_global.scss */
 
 a.btn-link {
   color: #92bc5c;
 }
 
-/* line 73, resources/assets/styles/common/_global.scss */
+/* line 76, resources/assets/styles/common/_global.scss */
 
 a.light {
   background-color: #e7f0da;
@@ -18711,7 +18722,7 @@ a.light {
   font-size: 14px !important;
 }
 
-/* line 82, resources/assets/styles/common/_global.scss */
+/* line 85, resources/assets/styles/common/_global.scss */
 
 .small p {
   font-size: 14px;
@@ -18720,13 +18731,13 @@ a.light {
   padding: 0;
 }
 
-/* line 90, resources/assets/styles/common/_global.scss */
+/* line 93, resources/assets/styles/common/_global.scss */
 
 img {
   max-width: 100%;
 }
 
-/* line 94, resources/assets/styles/common/_global.scss */
+/* line 97, resources/assets/styles/common/_global.scss */
 
 .logo {
   width: 160px;
@@ -18734,27 +18745,27 @@ img {
   margin: 4rem 0 3rem 0;
 }
 
-/* line 101, resources/assets/styles/common/_global.scss */
+/* line 104, resources/assets/styles/common/_global.scss */
 
 .content section {
   padding: 7rem 0;
 }
 
 @media (max-width: 767.98px) {
-  /* line 101, resources/assets/styles/common/_global.scss */
+  /* line 104, resources/assets/styles/common/_global.scss */
 
   .content section {
     padding: 4rem 0;
   }
 }
 
-/* line 108, resources/assets/styles/common/_global.scss */
+/* line 111, resources/assets/styles/common/_global.scss */
 
 .content section.beige {
   background: #f9f7ef;
 }
 
-/* line 112, resources/assets/styles/common/_global.scss */
+/* line 115, resources/assets/styles/common/_global.scss */
 
 .content section div {
   display: -webkit-box;
@@ -18769,38 +18780,38 @@ img {
           justify-content: center;
 }
 
-/* line 119, resources/assets/styles/common/_global.scss */
+/* line 122, resources/assets/styles/common/_global.scss */
 
 .content a {
   padding-bottom: 4px;
   border-bottom: solid 2px;
 }
 
-/* line 123, resources/assets/styles/common/_global.scss */
+/* line 126, resources/assets/styles/common/_global.scss */
 
 .content a:hover {
   text-decoration: none;
 }
 
-/* line 130, resources/assets/styles/common/_global.scss */
+/* line 133, resources/assets/styles/common/_global.scss */
 
 .nav-mobile {
   display: none;
 }
 
-/* line 133, resources/assets/styles/common/_global.scss */
+/* line 136, resources/assets/styles/common/_global.scss */
 
 .nav-mobile.is-active {
   display: block;
 }
 
-/* line 138, resources/assets/styles/common/_global.scss */
+/* line 141, resources/assets/styles/common/_global.scss */
 
 body.is-active {
   position: fixed;
 }
 
-/* line 142, resources/assets/styles/common/_global.scss */
+/* line 145, resources/assets/styles/common/_global.scss */
 
 .modal-dialog {
   width: 100%;
@@ -18810,7 +18821,7 @@ body.is-active {
   padding: 0;
 }
 
-/* line 150, resources/assets/styles/common/_global.scss */
+/* line 153, resources/assets/styles/common/_global.scss */
 
 .modal-content {
   height: auto;
@@ -18820,7 +18831,7 @@ body.is-active {
 }
 
 @media (min-width: 768px) {
-  /* line 150, resources/assets/styles/common/_global.scss */
+  /* line 153, resources/assets/styles/common/_global.scss */
 
   .modal-content {
     padding: 10rem;
@@ -18828,7 +18839,7 @@ body.is-active {
 }
 
 @media (min-width: 768px) {
-  /* line 150, resources/assets/styles/common/_global.scss */
+  /* line 153, resources/assets/styles/common/_global.scss */
 
   .modal-content {
     padding: 10rem 15rem;
@@ -19513,35 +19524,6 @@ header svg {
   overflow: hidden;
 }
 
-/* line 86, resources/assets/styles/layouts/_header.scss */
-
-.banner.banner-sm {
-  height: auto;
-  background: #e9725d;
-  padding: 3rem 0;
-  color: #fff;
-  margin-top: 2rem;
-}
-
-/* line 93, resources/assets/styles/layouts/_header.scss */
-
-.banner.banner-sm .page-header {
-  width: 100%;
-  text-align: left;
-}
-
-/* line 97, resources/assets/styles/layouts/_header.scss */
-
-.banner.banner-sm .page-header h1 {
-  text-transform: uppercase;
-  padding: 0;
-  font-weight: 700;
-  width: 10rem;
-  text-align: left;
-  font-size: 54px;
-  line-height: 54px;
-}
-
 @media (max-width: 767.98px) {
   /* line 79, resources/assets/styles/layouts/_header.scss */
 
@@ -19549,21 +19531,21 @@ header svg {
     height: 450px;
   }
 
-  /* line 112, resources/assets/styles/layouts/_header.scss */
+  /* line 89, resources/assets/styles/layouts/_header.scss */
 
   .banner img {
     max-width: 300px;
   }
 }
 
-/* line 117, resources/assets/styles/layouts/_header.scss */
+/* line 94, resources/assets/styles/layouts/_header.scss */
 
 .banner img {
   -webkit-filter: drop-shadow(0 0 15px #21302f);
   filter: drop-shadow(0 0 15px #21302f);
 }
 
-/* line 122, resources/assets/styles/layouts/_header.scss */
+/* line 99, resources/assets/styles/layouts/_header.scss */
 
 .banner::before {
   content: "";
@@ -19577,7 +19559,7 @@ header svg {
   z-index: 1;
 }
 
-/* line 134, resources/assets/styles/layouts/_header.scss */
+/* line 111, resources/assets/styles/layouts/_header.scss */
 
 .banner::after {
   content: "";
@@ -19588,6 +19570,35 @@ header svg {
   bottom: -2px;
   width: 105%;
   height: 100px;
+}
+
+/* line 123, resources/assets/styles/layouts/_header.scss */
+
+.banner-sm {
+  height: auto;
+  background: #e9725d;
+  padding: 3rem 0;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* line 130, resources/assets/styles/layouts/_header.scss */
+
+.banner-sm .page-header {
+  width: 100%;
+  text-align: left;
+}
+
+/* line 134, resources/assets/styles/layouts/_header.scss */
+
+.banner-sm .page-header h1 {
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 700;
+  width: 10rem;
+  text-align: left;
+  font-size: 54px;
+  line-height: 54px;
 }
 
 /* line 147, resources/assets/styles/layouts/_header.scss */

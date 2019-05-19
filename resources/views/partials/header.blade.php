@@ -3,6 +3,7 @@
   $overlay = get_field('overlay');	
   $logo = get_field('logo');
   $sub_title = get_field('sub_title');
+  $url = home_url();
 @endphp
 
 <nav class="nav-mobile">
@@ -26,7 +27,7 @@
 
   <div class="row">
     <div class="brand col-sm-4">
-      <h1 class="page-title">@php echo esc_html( get_bloginfo( 'name' ) ); @endphp</h1>
+    <h1 class="page-title"><a href="{{ $url }}">@php echo esc_html( get_bloginfo( 'name' ) ); @endphp</a></h1>
       <h2>Your Multi-day Indoor Farmers’ Market in Edmonton.</h2>
     </div>
     <nav class="nav-primary d-none d-sm-flex col-sm-8">
@@ -40,7 +41,7 @@
       <img data-src="{{$logo}}" alt="Bountiful Farmers' Market" class="lazyload" />  
     </div>
   @else
-    <div class="banner banner-small row justify-content-center no-gutters">
+    <div class="banner banner-sm row justify-content-center no-gutters">
         @include('partials.page-header')  
     </div>
   @endif	        				        			    

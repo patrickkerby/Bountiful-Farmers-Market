@@ -83,29 +83,6 @@ header {
   position: relative;
   overflow: hidden;
 
-  &.banner-sm {
-    height: auto;
-    background: $bountiful-rose;
-    padding: 3rem 0;
-    color: #fff;
-    margin-top: 2rem;
-
-    .page-header {
-      width: 100%;
-      text-align: left;
-
-      h1 {
-        text-transform: uppercase;
-        padding: 0;
-        font-weight: 700;
-        width: 10rem;
-        text-align: left;
-        font-size: 54px;
-        line-height: 54px;
-      }
-    }
-  }
-
   @include media-breakpoint-down(sm) {
     height: 450px;
 
@@ -140,6 +117,29 @@ header {
     bottom: -2px;
     width: 105%;
     height: 100px;
+  }
+}
+
+.banner-sm {
+  height: auto;
+  background: $bountiful-rose;
+  padding: 3rem 0;
+  color: #fff;
+  margin-top: 2rem;
+
+  .page-header {
+    width: 100%;
+    text-align: left;
+
+    h1 {
+      text-transform: uppercase;
+      padding: 0;
+      font-weight: 700;
+      width: 10rem;
+      text-align: left;
+      font-size: 54px;
+      line-height: 54px;
+    }
   }
 }
 
