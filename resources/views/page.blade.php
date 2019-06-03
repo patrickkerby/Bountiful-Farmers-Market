@@ -27,5 +27,6 @@
       endif;        
     @endphp
   @endwhile
+  @include('partials.content-page')
   @include('partials.mailchimp')
 @endsection

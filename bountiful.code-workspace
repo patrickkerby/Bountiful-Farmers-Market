@@ -6,6 +6,9 @@
 		{
 			"path": ".",
 			"name": "bountiful"
+		},
+		{
+			"path": "/Users/patrickkerby/Documents/sites/valet/bountifulmarkets/web/app/plugins/the-events-calendar/src/views/list"
 		}
 	]
 }

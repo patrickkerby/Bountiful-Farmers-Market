@@ -11,6 +11,10 @@
     margin-bottom: 15px;
   }
 
+  img {
+    height: auto;
+  }
+
   @include media-breakpoint-down(md) {
     img {
       margin: 2rem 0;
