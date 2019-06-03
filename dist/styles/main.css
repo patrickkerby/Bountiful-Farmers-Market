@@ -18785,33 +18785,34 @@ img {
 .content a {
   padding-bottom: 4px;
   border-bottom: solid 2px;
+  display: inline-block;
 }
 
-/* line 126, resources/assets/styles/common/_global.scss */
+/* line 127, resources/assets/styles/common/_global.scss */
 
 .content a:hover {
   text-decoration: none;
 }
 
-/* line 133, resources/assets/styles/common/_global.scss */
+/* line 134, resources/assets/styles/common/_global.scss */
 
 .nav-mobile {
   display: none;
 }
 
-/* line 136, resources/assets/styles/common/_global.scss */
+/* line 137, resources/assets/styles/common/_global.scss */
 
 .nav-mobile.is-active {
   display: block;
 }
 
-/* line 141, resources/assets/styles/common/_global.scss */
+/* line 142, resources/assets/styles/common/_global.scss */
 
 body.is-active {
   position: fixed;
 }
 
-/* line 145, resources/assets/styles/common/_global.scss */
+/* line 146, resources/assets/styles/common/_global.scss */
 
 .modal-dialog {
   width: 100%;
@@ -18821,7 +18822,7 @@ body.is-active {
   padding: 0;
 }
 
-/* line 153, resources/assets/styles/common/_global.scss */
+/* line 154, resources/assets/styles/common/_global.scss */
 
 .modal-content {
   height: auto;
@@ -18831,7 +18832,7 @@ body.is-active {
 }
 
 @media (min-width: 768px) {
-  /* line 153, resources/assets/styles/common/_global.scss */
+  /* line 154, resources/assets/styles/common/_global.scss */
 
   .modal-content {
     padding: 10rem;
@@ -18839,7 +18840,7 @@ body.is-active {
 }
 
 @media (min-width: 768px) {
-  /* line 153, resources/assets/styles/common/_global.scss */
+  /* line 154, resources/assets/styles/common/_global.scss */
 
   .modal-content {
     padding: 10rem 15rem;
