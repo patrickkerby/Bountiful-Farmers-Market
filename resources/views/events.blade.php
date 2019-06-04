@@ -1,12 +1,13 @@
  {{--
-  Template Name: Bountiful Events Template
+  Template Name: Events
 --}}
 
 @extends('layouts.app')
 
 @section('content')
-  @while(have_posts()) @php the_post() @endphp
-    @include('partials.page-header')
-    @include('partials.content-page')
-  @endwhile
+  <div id="tribe-events-pg-template">
+	<?php tribe_events_before_html(); ?>
+	<?php tribe_get_view(); ?>
+	<?php tribe_events_after_html(); ?>
+  </div> <!-- #tribe-events-pg-template -->
 @endsection

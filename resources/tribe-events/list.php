@@ -17,16 +17,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 do_action( 'tribe_events_before_template' );
 ?>
-
-<!-- Title Bar -->
-<?php tribe_get_template_part( 'list/title-bar' ); ?>
-
-	<!-- Tribe Bar -->
-<?php tribe_get_template_part( 'modules/bar' ); ?>
+<section class="row calendar justify-content-center">
+	<div class="col-10 calendar-filters">
+			<!-- Tribe Bar -->
+			<?php tribe_get_template_part( 'modules/bar' ); ?>
+	<?php do_action( 'tribe_events_filter_view_after_filters' ); ?>
+	</div>
+</section>
 
 	<!-- Main Events Content -->
-<?php tribe_get_template_part( 'list/content' ); ?>
-
+	<section class="calendar-list row">
+    <div class="col-sm-10 col-md-10 offset-md-1">
+			<?php tribe_get_template_part( 'list/content' ); ?>
+		</div>
+	</section>
 	<div class="tribe-clear"></div>
 
 <?php

@@ -7,7 +7,12 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
     @php do_action('get_header') @endphp
-    @include('partials.header')
+    
+    @if ( is_page('events') )
+      // do nothin'
+    @else
+      @include('partials.header')
+    @endif
     <div class="wrap" role="document">
       <div class="content">
         <main class="main container-fluid">
