@@ -1,0 +1,63 @@
+.calendar-list {
+  padding: 3rem 0;
+
+  .row {
+    border-bottom: solid 2px $bountiful-turquoise;
+    padding-bottom: 38px;
+    margin-top: 38px;
+  }
+}
+
+.tribe-events-loop {
+  h2 {
+    background: $bountiful-turquoise;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.tribe-events-loop .tribe-events-event-meta {
+  margin: 0;
+}
+
+.tribe-events-event-meta:first-child {
+  border: none;
+}
+
+.tribe-event-schedule-details {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 23px;
+  color: $bountiful-turquoise;
+
+  .time {
+    font-weight: 400;
+    font-size: 22px;
+    width: 100%;
+    display: inline-flex;
+  }
+}
+
+.tribe-events-list-event-title a {
+  color: $bountiful-green;
+  font-size: 33px;
+  font-weight: 800;
+  text-decoration: none;
+  border: none;
+}
+
+a.tribe-events-read-more {
+  float: right;
+  font-size: 22px;
+  text-decoration: none;
+  border-bottom: solid 2px $bountiful-rose;
+  line-height: 20px;
+}

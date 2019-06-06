@@ -43,7 +43,8 @@
   @elseif ( tribe_is_events_home ( ) )
     <div class="banner-events row justify-content-center">
       <div class="col-7">
-          <h2>@php echo tribe_get_events_title() @endphp <span>At Bountiful Farmers' Market</span></h2>
+          <h2>@php echo tribe_get_events_title() @endphp</h2>
+          <h3>At Bountiful Farmers' Market</h3>
       </div>
     </div>
   @else

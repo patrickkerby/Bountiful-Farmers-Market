@@ -19426,7 +19426,7 @@ section.fancy-list .button {
 /* line 8, resources/assets/styles/components/_calendar-filter.scss */
 
 .page-template-events-blade-php .banner-events {
-  padding: 125px 0;
+  padding: 4rem 0 8rem 0;
   position: relative;
 }
 
@@ -19446,52 +19446,253 @@ section.fancy-list .button {
 
 /* line 25, resources/assets/styles/components/_calendar-filter.scss */
 
-.page-template-events-blade-php h2,
-.page-template-events-blade-php .nav-mobile ul.nav li.menu-item a,
-.nav-mobile ul.nav li.menu-item .page-template-events-blade-php a {
+.page-template-events-blade-php .banner-events h2,
+.page-template-events-blade-php .banner-events .nav-mobile ul.nav li.menu-item a,
+.nav-mobile ul.nav li.menu-item .page-template-events-blade-php .banner-events a {
   font-size: 72px;
+  line-height: 72px;
   font-weight: 700;
   text-align: center;
+  margin: 0 0 0.75rem;
 }
 
-/* line 30, resources/assets/styles/components/_calendar-filter.scss */
+/* line 33, resources/assets/styles/components/_calendar-filter.scss */
 
-.page-template-events-blade-php h2 span,
-.page-template-events-blade-php .nav-mobile ul.nav li.menu-item a span,
-.nav-mobile ul.nav li.menu-item .page-template-events-blade-php a span {
+.page-template-events-blade-php .banner-events h3 {
   font-size: 25px;
+  line-height: 35px;
+  text-align: center;
   text-transform: uppercase;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-/* line 37, resources/assets/styles/components/_calendar-filter.scss */
-
-.calendar {
-  margin-top: -125px;
+  margin: 0;
 }
 
 /* line 41, resources/assets/styles/components/_calendar-filter.scss */
 
-.calendar-filters {
-  background: #e9725d;
-  height: 92px;
+.calendar {
+  margin-top: -1rem;
 }
 
-/* line 45, resources/assets/styles/components/_calendar-filter.scss */
+/* line 44, resources/assets/styles/components/_calendar-filter.scss */
+
+.calendar form {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* line 48, resources/assets/styles/components/_calendar-filter.scss */
+
+.calendar form#tribe_events_filters_form {
+  background: #da5f4a;
+}
+
+/* line 54, resources/assets/styles/components/_calendar-filter.scss */
+
+.calendar-search {
+  height: 100%;
+}
+
+/* line 58, resources/assets/styles/components/_calendar-filter.scss */
+
+.calendar-filters {
+  background: #e9725d;
+}
+
+/* line 61, resources/assets/styles/components/_calendar-filter.scss */
 
 .calendar-filters .tribe-events-filters-content {
   background: none;
   border: none;
 }
 
-/* line 50, resources/assets/styles/components/_calendar-filter.scss */
+/* line 66, resources/assets/styles/components/_calendar-filter.scss */
 
 .calendar-filters button {
   font-size: 20px;
   background: none;
   border: none;
+}
+
+/* line 72, resources/assets/styles/components/_calendar-filter.scss */
+
+.calendar-filters input,
+.calendar-filters textarea,
+.calendar-filters button {
+  background: none;
+  padding: 0.25rem 0 0.25rem 0;
+  margin: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  border-bottom: solid #fff 3px;
+  text-align: left;
+}
+
+/* line 86, resources/assets/styles/components/_calendar-filter.scss */
+
+.calendar-filters input.tribe-events-button {
+  border-bottom: none;
+  background: #da5f4a;
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+/* line 94, resources/assets/styles/components/_calendar-filter.scss */
+
+.calendar-filters ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff;
+}
+
+/* line 98, resources/assets/styles/components/_calendar-filter.scss */
+
+.calendar-filters ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+
+/* line 102, resources/assets/styles/components/_calendar-filter.scss */
+
+.calendar-filters :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff;
+}
+
+/* line 106, resources/assets/styles/components/_calendar-filter.scss */
+
+.calendar-filters :-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+
+/* line 111, resources/assets/styles/components/_calendar-filter.scss */
+
+.tribe-events-filter-view.tribe-filters-closed #tribe_events_filters_form,
+.tribe-events-filter-view.tribe-filters-closed #tribe_events_filters_wrapper .tribe-events-filters-label,
+.tribe-events-filter-view.tribe-filters-closed .tribe_events_filters_reset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* line 118, resources/assets/styles/components/_calendar-filter.scss */
+
+.tribe-filters-closed .tribe-events-filters-content {
+  padding: 0 30px;
+}
+
+/* line 122, resources/assets/styles/components/_calendar-filter.scss */
+
+#tribe_events_filters_form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+/* line 129, resources/assets/styles/components/_calendar-filter.scss */
+
+.tribe_events_filter_item button {
+  color: #fff;
+  border-bottom: solid 3px #fff;
+  width: 100%;
+}
+
+/* line 136, resources/assets/styles/components/_calendar-filter.scss */
+
+.tribe-bar-submit {
+  border: none;
+}
+
+/* line 1, resources/assets/styles/components/_calendar-listings.scss */
+
+.calendar-list {
+  padding: 3rem 0;
+}
+
+/* line 4, resources/assets/styles/components/_calendar-listings.scss */
+
+.calendar-list .row {
+  border-bottom: solid 2px #007276;
+  padding-bottom: 38px;
+  margin-top: 38px;
+}
+
+/* line 12, resources/assets/styles/components/_calendar-listings.scss */
+
+.tribe-events-loop h2,
+.tribe-events-loop .nav-mobile ul.nav li.menu-item a,
+.nav-mobile ul.nav li.menu-item .tribe-events-loop a {
+  background: #007276;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  width: 20%;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+/* line 22, resources/assets/styles/components/_calendar-listings.scss */
+
+.tribe-events-loop h3 {
+  margin: 0;
+}
+
+/* line 27, resources/assets/styles/components/_calendar-listings.scss */
+
+.tribe-events-loop .tribe-events-event-meta {
+  margin: 0;
+}
+
+/* line 31, resources/assets/styles/components/_calendar-listings.scss */
+
+.tribe-events-event-meta:first-child {
+  border: none;
+}
+
+/* line 35, resources/assets/styles/components/_calendar-listings.scss */
+
+.tribe-event-schedule-details {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #007276;
+}
+
+/* line 41, resources/assets/styles/components/_calendar-listings.scss */
+
+.tribe-event-schedule-details .time {
+  font-weight: 400;
+  font-size: 22px;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+/* line 49, resources/assets/styles/components/_calendar-listings.scss */
+
+.tribe-events-list-event-title a {
+  color: #92bc5c;
+  font-size: 33px;
+  font-weight: 800;
+  text-decoration: none;
+  border: none;
+}
+
+/* line 57, resources/assets/styles/components/_calendar-listings.scss */
+
+a.tribe-events-read-more {
+  float: right;
+  font-size: 22px;
+  text-decoration: none;
+  border-bottom: solid 2px #e9725d;
+  line-height: 20px;
 }
 
 /* line 10, resources/assets/styles/layouts/_header.scss */
