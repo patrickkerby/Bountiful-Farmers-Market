@@ -25,9 +25,6 @@ $more = false;
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php do_action( 'tribe_events_inside_before_loop' ); ?>
 
-		<!-- Month / Year Headers -->
-		<?php tribe_events_list_the_date_headers(); ?>
-
 		<!-- Event  -->
 		<?php
 		$post_parent = '';
@@ -36,6 +33,8 @@ $more = false;
 		}
 		?>
 		<div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes() ?>" <?php echo $post_parent; ?>>
+					<!-- Month / Year Headers -->
+		<?php tribe_events_list_the_date_headers(); ?>
 			<?php
 			$event_type = tribe( 'tec.featured_events' )->is_featured( $post->ID ) ? 'featured' : 'event';
 

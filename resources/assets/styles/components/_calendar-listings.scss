@@ -1,5 +1,5 @@
 .calendar-list {
-  padding: 3rem 0;
+  padding: 0 0 3rem 0;
 
   .row {
     border-bottom: solid 2px $bountiful-turquoise;
@@ -60,4 +60,104 @@ a.tribe-events-read-more {
   text-decoration: none;
   border-bottom: solid 2px $bountiful-rose;
   line-height: 20px;
+}
+
+//featured events
+.calendar-list .full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: -4rem;
+  padding-top: 4rem;
+  background: $bountiful-beige;
+  border: none;
+
+  .row {
+    border: none;
+    margin: 0;
+    padding: 4rem 0;
+  }
+
+  a.tribe-events-read-more {
+    float: none;
+  }
+}
+
+.tribe-event-featured {
+  position: relative;
+  margin-bottom: 8rem;
+
+  .event-details {
+    padding: 0 3rem;
+  }
+
+  .tribe-event-schedule-details {
+    background: $bountiful-rose;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 3rem 0 4rem 0;
+    position: relative;
+
+    .month {
+      text-transform: uppercase;
+      font-size: 42px;
+      line-height: 44px;
+    }
+
+    .date {
+      font-size: 78px;
+      line-height: 73px;
+    }
+
+    .time {
+      font-size: 23px;
+      line-height: 24px;
+      text-transform: uppercase;
+      width: auto;
+      margin: 0 auto;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: -25px;
+      color: #fff;
+      background: $bountiful-green;
+      padding: 0.5rem 1.5rem;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+
+  .tribe-events-content p {
+    font-size: 20px;
+    line-height: 32px;
+    color: $bountiful-turquoise;
+  }
+
+  .event-details h3.tribe-events-list-event-title {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 1rem;
+  }
+}
+
+h2.tribe-events-list-separator-month {
+  margin: 4rem auto 0 auto;
+}
+
+.tribe-event-featured h2.tribe-events-list-separator-month {
+  position: absolute;
+  bottom: -8rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }

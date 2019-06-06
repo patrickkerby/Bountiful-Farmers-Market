@@ -20,6 +20,7 @@
   left: 0;
   -webkit-clip-path: ellipse(55% 50% at 50% 0%);
   clip-path: ellipse(55% 50% at 50% 0%);
+  z-index: 2;
 }
 
 .page-template-events-blade-php .banner-events h2 {
@@ -57,6 +58,7 @@
 
 .calendar-filters {
   background: $bountiful-rose;
+  z-index: 2;
 
   .tribe-events-filters-content {
     background: none;
