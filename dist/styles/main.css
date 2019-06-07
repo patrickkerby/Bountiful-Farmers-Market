@@ -19877,16 +19877,17 @@ h2.tribe-events-list-separator-month,
 
 .single-tribe_events #tribe-events-content {
   margin-top: 4rem;
+  margin-bottom: 0;
 }
 
-/* line 11, resources/assets/styles/components/_calendar-single.scss */
+/* line 12, resources/assets/styles/components/_calendar-single.scss */
 
 .page-template-events-blade-php h1.tribe-events-single-event-title {
   color: #92bc5c;
   margin-bottom: 3rem;
 }
 
-/* line 16, resources/assets/styles/components/_calendar-single.scss */
+/* line 17, resources/assets/styles/components/_calendar-single.scss */
 
 .page-template-events-blade-php .tribe_events h2,
 .page-template-events-blade-php .tribe_events .nav-mobile ul.nav li.menu-item a,
@@ -19896,7 +19897,7 @@ h2.tribe-events-list-separator-month,
   font-size: 28px;
 }
 
-/* line 22, resources/assets/styles/components/_calendar-single.scss */
+/* line 23, resources/assets/styles/components/_calendar-single.scss */
 
 .single-tribe_events .full-width {
   margin-top: 4rem;
@@ -19904,7 +19905,19 @@ h2.tribe-events-list-separator-month,
   background: #e9725d;
 }
 
-/* line 28, resources/assets/styles/components/_calendar-single.scss */
+/* line 29, resources/assets/styles/components/_calendar-single.scss */
+
+.single-tribe_events .full-width.sponsors {
+  margin-top: 0;
+}
+
+/* line 33, resources/assets/styles/components/_calendar-single.scss */
+
+.single-tribe_events .full-width.map {
+  background: #f9f7ef;
+}
+
+/* line 37, resources/assets/styles/components/_calendar-single.scss */
 
 .single-tribe_events h4 {
   color: #fff;
@@ -19916,7 +19929,13 @@ h2.tribe-events-list-separator-month,
   margin: 0 0 3rem 0;
 }
 
-/* line 38, resources/assets/styles/components/_calendar-single.scss */
+/* line 47, resources/assets/styles/components/_calendar-single.scss */
+
+.single-tribe_events .full-width.map h4 {
+  color: #e9725d;
+}
+
+/* line 51, resources/assets/styles/components/_calendar-single.scss */
 
 .single-tribe_events .tribe-events-back {
   margin-top: -4rem;
@@ -19924,7 +19943,7 @@ h2.tribe-events-list-separator-month,
   z-index: 5;
 }
 
-/* line 43, resources/assets/styles/components/_calendar-single.scss */
+/* line 56, resources/assets/styles/components/_calendar-single.scss */
 
 .single-tribe_events .tribe-events-back a {
   border: none;
@@ -20361,10 +20380,11 @@ footer svg {
   margin-left: -50vw;
   margin-right: -50vw;
   padding-top: 4rem;
+  margin-top: 0;
   text-align: center;
 }
 
-/* line 89, resources/assets/styles/layouts/_footer.scss */
+/* line 90, resources/assets/styles/layouts/_footer.scss */
 
 .sponsors img {
   margin: 2rem 0 3rem 0;
@@ -20373,13 +20393,13 @@ footer svg {
   padding: 1rem 3rem;
 }
 
-/* line 95, resources/assets/styles/layouts/_footer.scss */
+/* line 96, resources/assets/styles/layouts/_footer.scss */
 
 .sponsors img:nth-of-type(odd) {
   border-right: solid 2px #8e1821;
 }
 
-/* line 100, resources/assets/styles/layouts/_footer.scss */
+/* line 101, resources/assets/styles/layouts/_footer.scss */
 
 .sponsors h4 {
   color: #fff;

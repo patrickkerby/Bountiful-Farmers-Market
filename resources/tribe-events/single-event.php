@@ -60,7 +60,7 @@ $event_id = get_the_ID();
 					<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 				</div>
 			</div>
-			<div class="row justify-content-center full-width">
+			<div class="row justify-content-center full-width map">
 				<div class="col-11">
 					<!-- Event meta -->
 					<?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>

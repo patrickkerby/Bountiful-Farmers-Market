@@ -5,6 +5,7 @@
 
   #tribe-events-content {
     margin-top: 4rem;
+    margin-bottom: 0;
   }
 }
 
@@ -25,6 +26,14 @@
   background: $bountiful-rose;
 }
 
+.single-tribe_events .full-width.sponsors {
+  margin-top: 0;
+}
+
+.single-tribe_events .full-width.map {
+  background: $bountiful-beige;
+}
+
 .single-tribe_events h4 {
   color: #fff;
   text-align: center;
@@ -33,6 +42,10 @@
   text-transform: uppercase;
   font-weight: 700;
   margin: 0 0 3rem 0;
+}
+
+.single-tribe_events .full-width.map h4 {
+  color: $bountiful-rose;
 }
 
 .single-tribe_events .tribe-events-back {
