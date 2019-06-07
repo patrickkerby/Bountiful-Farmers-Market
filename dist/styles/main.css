@@ -20354,9 +20354,17 @@ footer svg {
 
 .sponsors {
   background: #e9725d;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: -4rem;
+  padding-top: 4rem;
 }
 
-/* line 81, resources/assets/styles/layouts/_footer.scss */
+/* line 89, resources/assets/styles/layouts/_footer.scss */
 
 .sponsors img {
   margin: 3rem 4rem;
