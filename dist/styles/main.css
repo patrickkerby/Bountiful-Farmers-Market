@@ -20370,6 +20370,16 @@ footer svg {
   margin: 3rem 4rem;
 }
 
+/* line 93, resources/assets/styles/layouts/_footer.scss */
+
+.sponsors h4 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
 /* line 1, resources/assets/styles/layouts/_coming-soon.scss */
 
 .words {
