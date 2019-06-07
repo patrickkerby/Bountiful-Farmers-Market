@@ -20350,6 +20350,18 @@ footer svg {
   width: 100%;
 }
 
+/* line 78, resources/assets/styles/layouts/_footer.scss */
+
+.sponsors {
+  background: #e9725d;
+}
+
+/* line 81, resources/assets/styles/layouts/_footer.scss */
+
+.sponsors img {
+  margin: 3rem 4rem;
+}
+
 /* line 1, resources/assets/styles/layouts/_coming-soon.scss */
 
 .words {
