@@ -1,9 +1,6 @@
  {{--
   Template Name: Events
 --}}
-@php
-$sponsor_logo = get_field('sponsor_logo', 'option'); 
-@endphp
 
 @extends('layouts.app')
 
