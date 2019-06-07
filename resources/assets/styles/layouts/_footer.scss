@@ -83,11 +83,18 @@ footer {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  margin-top: -4rem;
   padding-top: 4rem;
+  text-align: center;
 
   img {
-    margin: 3rem 4rem;
+    margin: 2rem 0 3rem 0;
+    max-width: 450px;
+    max-height: 125px;
+    padding: 1rem 3rem;
+
+    &:nth-of-type(odd) {
+      border-right: solid 2px #8e1821;
+    }
   }
 
   h4 {
@@ -95,6 +102,5 @@ footer {
     font-size: 20px;
     text-align: center;
     width: 100%;
-    margin-top: 3rem;
   }
 }

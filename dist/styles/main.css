@@ -20360,24 +20360,32 @@ footer svg {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  margin-top: -4rem;
   padding-top: 4rem;
+  text-align: center;
 }
 
 /* line 89, resources/assets/styles/layouts/_footer.scss */
 
 .sponsors img {
-  margin: 3rem 4rem;
+  margin: 2rem 0 3rem 0;
+  max-width: 450px;
+  max-height: 125px;
+  padding: 1rem 3rem;
 }
 
-/* line 93, resources/assets/styles/layouts/_footer.scss */
+/* line 95, resources/assets/styles/layouts/_footer.scss */
+
+.sponsors img:nth-of-type(odd) {
+  border-right: solid 2px #8e1821;
+}
+
+/* line 100, resources/assets/styles/layouts/_footer.scss */
 
 .sponsors h4 {
   color: #fff;
   font-size: 20px;
   text-align: center;
   width: 100%;
-  margin-top: 3rem;
 }
 
 /* line 1, resources/assets/styles/layouts/_coming-soon.scss */
