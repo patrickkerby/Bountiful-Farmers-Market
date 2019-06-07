@@ -15,6 +15,7 @@
 
         @php the_row();
           $sponsor_logo = get_sub_field('sponsor_logo', 'option');
+          var_dump($sponsor_logo);
         @endphp 
 
         <img src="{{ $sponsor_logo }}" alt="Thanks to our sponsors!" />
