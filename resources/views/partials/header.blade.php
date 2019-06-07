@@ -40,10 +40,10 @@
     <div class="banner row justify-content-center" style="background-image: radial-gradient(50% 55%, rgba(33,59,60,0.41) 37%, rgba(33,59,60,0.06) 64%), url('{{ $hero }}');">
       <img data-src="{{$logo}}" alt="Bountiful Farmers' Market" class="lazyload" />  
     </div>
-  @elseif ( tribe_is_events_home ( ) )
+  @elseif ( tribe_is_event() )
     <div class="banner-events row justify-content-center">
-      <div class="col-7">
-          <h2>@php echo tribe_get_events_title() @endphp</h2>
+      <div class="col-sm-7">
+          <h2>Weekly Events</h2>
           <h3>At Bountiful Farmers' Market</h3>
       </div>
     </div>

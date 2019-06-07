@@ -8,6 +8,10 @@
 .page-template-events-blade-php .banner-events {
   padding: 4rem 0 8rem 0;
   position: relative;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 0 4rem 0;
+  }
 }
 
 .page-template-events-blade-php div.banner-events::after {
@@ -137,4 +141,11 @@
 
 .tribe-bar-submit {
   border: none;
+}
+
+@include media-breakpoint-down(sm) {
+  .tribe-bar-date-filter,
+  .tribe-bar-search-filter {
+    margin-bottom: 1rem;
+  }
 }

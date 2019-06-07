@@ -31,9 +31,9 @@ $end_time = tribe_get_display_end_date(null,false,'g:i a');
 
 ?>
 <div class="row full-width justify-content-center no-gutters">
-	<div class="col-10">
+	<div class="col-sm-10">
 		<div class="row no-gutters">
-			<div class="col-3">
+			<div class="col-sm-3">
 				<!-- Schedule & Recurrence Details -->
 				<div class="tribe-event-schedule-details">
 					<span class="month"><?php echo $start_month ?></span>
@@ -42,7 +42,7 @@ $end_time = tribe_get_display_end_date(null,false,'g:i a');
 					<span class="caption">Featured Event</span>
 				</div>
 			</div>
-			<div class="col-9 event-details">
+			<div class="col-sm-9 event-details">
 				<!-- Event Title -->
 				<?php do_action( 'tribe_events_before_the_event_title' ) ?>
 				<h3 class="tribe-events-list-event-title">

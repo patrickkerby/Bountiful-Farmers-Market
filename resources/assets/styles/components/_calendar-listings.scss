@@ -2,21 +2,27 @@
   padding: 0 0 3rem 0;
 
   .row {
-    border-bottom: solid 2px $bountiful-turquoise;
     padding-bottom: 38px;
-    margin-top: 38px;
+    padding-top: 38px;
+    margin-top: -2px;
+    border: solid 2px $bountiful-turquoise;
+    border-width: 2px 0;
   }
 }
 
 .tribe-events-loop {
   h2 {
-    background: $bountiful-turquoise;
     font-size: 28px;
     font-weight: 400;
     text-align: center;
-    width: 20%;
+    width: auto;
     margin: 0 auto;
-    padding: 0.5rem 1rem;
+
+    span {
+      background: $bountiful-turquoise;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+    }
   }
 
   h3 {
@@ -59,11 +65,11 @@ a.tribe-events-read-more {
   font-size: 22px;
   text-decoration: none;
   border-bottom: solid 2px $bountiful-rose;
-  line-height: 20px;
 }
 
 //featured events
-.calendar-list .full-width {
+.calendar-list .full-width,
+.single-tribe_events .full-width {
   width: 100vw;
   position: relative;
   left: 50%;
@@ -88,7 +94,7 @@ a.tribe-events-read-more {
 
 .tribe-event-featured {
   position: relative;
-  margin-bottom: 8rem;
+  margin-bottom: 10.5rem;
 
   .event-details {
     padding: 0 3rem;
@@ -106,6 +112,7 @@ a.tribe-events-read-more {
     width: 100%;
     padding: 3rem 0 4rem 0;
     position: relative;
+    margin-bottom: 3rem;
 
     .month {
       text-transform: uppercase;
@@ -151,12 +158,12 @@ a.tribe-events-read-more {
 }
 
 h2.tribe-events-list-separator-month {
-  margin: 4rem auto 0 auto;
+  margin: 6rem auto 0 auto;
 }
 
 .tribe-event-featured h2.tribe-events-list-separator-month {
   position: absolute;
-  bottom: -8rem;
+  bottom: -10.5rem;
   left: 0;
   right: 0;
   margin: 0 auto;

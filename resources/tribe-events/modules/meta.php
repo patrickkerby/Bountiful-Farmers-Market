@@ -20,14 +20,10 @@ $set_venue_apart = apply_filters( 'tribe_events_single_event_the_meta_group_venu
 ?>
 
 <?php if ( $not_skeleton ) : ?>
-	<div class="tribe-events-single-section tribe-events-event-meta primary tribe-clearfix">
 <?php endif; ?>
 
 <?php
 do_action( 'tribe_events_single_event_meta_primary_section_start' );
-
-// Always include the main event details in this first section
-tribe_get_template_part( 'modules/meta/details' );
 
 // Include venue meta if appropriate.
 if ( tribe_get_venue_id() ) {
@@ -46,22 +42,15 @@ if ( tribe_get_venue_id() ) {
 	}
 }
 
-// Include organizer meta if appropriate
-if ( tribe_has_organizer() ) {
-	tribe_get_template_part( 'modules/meta/organizer' );
-}
-
 do_action( 'tribe_events_single_event_meta_primary_section_end' );
 ?>
 
 <?php if ( $not_skeleton ) : ?>
-	</div>
 <?php endif; ?>
 
 
 <?php if ( $set_venue_apart ) : ?>
 	<?php if ( $not_skeleton ) : ?>
-		<div class="tribe-events-single-section tribe-events-event-meta secondary tribe-clearfix">
 	<?php endif; ?>
 	<?php
 	do_action( 'tribe_events_single_event_meta_secondary_section_start' );
@@ -73,7 +62,6 @@ do_action( 'tribe_events_single_event_meta_primary_section_end' );
 	?>
 	<?php
 	if ( $not_skeleton ) : ?>
-		</div>
 	<?php endif; ?>
 <?php
 endif;

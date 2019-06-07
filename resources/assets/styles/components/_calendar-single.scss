@@ -1,0 +1,51 @@
+.single-tribe_events {
+  img {
+    height: auto;
+  }
+
+  #tribe-events-content {
+    margin-top: 4rem;
+  }
+}
+
+.page-template-events-blade-php h1.tribe-events-single-event-title {
+  color: $bountiful-green;
+  margin-bottom: 3rem;
+}
+
+.page-template-events-blade-php .tribe_events h2 {
+  color: $bountiful-turquoise;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.single-tribe_events .full-width {
+  margin-top: 4rem;
+  padding: 4rem 0;
+  background: $bountiful-rose;
+}
+
+.single-tribe_events h4 {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 3rem 0;
+}
+
+.single-tribe_events .tribe-events-back {
+  margin-top: -4rem;
+  position: relative;
+  z-index: 5;
+
+  a {
+    border: none;
+    color: #fff;
+    background: $bountiful-rose;
+    padding: 0.25rem 1rem;
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
