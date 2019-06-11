@@ -18775,12 +18775,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-/* line 122, resources/assets/styles/common/_global.scss */
+/* line 121, resources/assets/styles/common/_global.scss */
 
 .content a {
   padding-bottom: 4px;
@@ -18789,31 +18786,49 @@ img {
   z-index: 2;
 }
 
-/* line 128, resources/assets/styles/common/_global.scss */
+/* line 127, resources/assets/styles/common/_global.scss */
 
 .content a:hover {
   text-decoration: none;
 }
 
+/* line 131, resources/assets/styles/common/_global.scss */
+
+.content a.download {
+  margin-left: 1.5rem;
+  font-size: 18px;
+}
+
 /* line 135, resources/assets/styles/common/_global.scss */
+
+.content a.download::before {
+  display: block;
+  content: "\F0AB";
+  color: #e9725d;
+  position: absolute;
+  left: 2rem;
+  font-family: fontawesome, Arial, Helvetica, sans-serif;
+}
+
+/* line 148, resources/assets/styles/common/_global.scss */
 
 .nav-mobile {
   display: none;
 }
 
-/* line 138, resources/assets/styles/common/_global.scss */
+/* line 151, resources/assets/styles/common/_global.scss */
 
 .nav-mobile.is-active {
   display: block;
 }
 
-/* line 143, resources/assets/styles/common/_global.scss */
+/* line 156, resources/assets/styles/common/_global.scss */
 
 body.is-active {
   position: fixed;
 }
 
-/* line 147, resources/assets/styles/common/_global.scss */
+/* line 160, resources/assets/styles/common/_global.scss */
 
 .modal-dialog {
   width: 100%;
@@ -18823,7 +18838,7 @@ body.is-active {
   padding: 0;
 }
 
-/* line 155, resources/assets/styles/common/_global.scss */
+/* line 168, resources/assets/styles/common/_global.scss */
 
 .modal-content {
   height: auto;
@@ -18833,7 +18848,7 @@ body.is-active {
 }
 
 @media (min-width: 768px) {
-  /* line 155, resources/assets/styles/common/_global.scss */
+  /* line 168, resources/assets/styles/common/_global.scss */
 
   .modal-content {
     padding: 10rem;
@@ -18841,7 +18856,7 @@ body.is-active {
 }
 
 @media (min-width: 768px) {
-  /* line 155, resources/assets/styles/common/_global.scss */
+  /* line 168, resources/assets/styles/common/_global.scss */
 
   .modal-content {
     padding: 10rem 15rem;
@@ -19954,6 +19969,139 @@ h2.tribe-events-list-separator-month,
   font-weight: 700;
 }
 
+/* line 2, resources/assets/styles/components/_tables.scss */
+
+.footable.table thead tr.footable-header {
+  border: solid #92bc5c !important;
+  border-width: 2px 0 !important;
+}
+
+/* line 6, resources/assets/styles/components/_tables.scss */
+
+.footable.table thead tr.footable-header th {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  border: none !important;
+  color: #92bc5c;
+  padding: 1rem 0;
+}
+
+/* line 14, resources/assets/styles/components/_tables.scss */
+
+.footable.table thead tr.footable-header th span.fooicon {
+  margin-left: 10px;
+  font-size: 16px;
+  position: relative;
+  bottom: 4px;
+}
+
+/* line 23, resources/assets/styles/components/_tables.scss */
+
+.footable.table thead tr.footable-filtering th {
+  padding: 0;
+  border: none !important;
+}
+
+/* line 27, resources/assets/styles/components/_tables.scss */
+
+.footable.table thead tr.footable-filtering th .form-group,
+.footable.table thead tr.footable-filtering th .comment-form p,
+.comment-form .footable.table thead tr.footable-filtering th p,
+.footable.table thead tr.footable-filtering th .search-form label,
+.search-form .footable.table thead tr.footable-filtering th label {
+  background: #92bc5c;
+  padding: 0.5rem;
+}
+
+/* line 31, resources/assets/styles/components/_tables.scss */
+
+.footable.table thead tr.footable-filtering th .form-group input,
+.footable.table thead tr.footable-filtering th .comment-form p input,
+.comment-form .footable.table thead tr.footable-filtering th p input,
+.footable.table thead tr.footable-filtering th .search-form label input,
+.search-form .footable.table thead tr.footable-filtering th label input {
+  background: none;
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 18px;
+}
+
+/* line 38, resources/assets/styles/components/_tables.scss */
+
+.footable.table thead tr.footable-filtering th .form-group input::-webkit-input-placeholder,
+.footable.table thead tr.footable-filtering th .comment-form p input::-webkit-input-placeholder,
+.comment-form .footable.table thead tr.footable-filtering th p input::-webkit-input-placeholder,
+.footable.table thead tr.footable-filtering th .search-form label input::-webkit-input-placeholder,
+.search-form .footable.table thead tr.footable-filtering th label input::-webkit-input-placeholder {
+  color: #e0ffb8;
+}
+
+.footable.table thead tr.footable-filtering th .form-group input::-ms-input-placeholder,
+.footable.table thead tr.footable-filtering th .comment-form p input::-ms-input-placeholder,
+.comment-form .footable.table thead tr.footable-filtering th p input::-ms-input-placeholder,
+.footable.table thead tr.footable-filtering th .search-form label input::-ms-input-placeholder,
+.search-form .footable.table thead tr.footable-filtering th label input::-ms-input-placeholder {
+  color: #e0ffb8;
+}
+
+.footable.table thead tr.footable-filtering th .form-group input::placeholder,
+.footable.table thead tr.footable-filtering th .comment-form p input::placeholder,
+.comment-form .footable.table thead tr.footable-filtering th p input::placeholder,
+.footable.table thead tr.footable-filtering th .search-form label input::placeholder,
+.search-form .footable.table thead tr.footable-filtering th label input::placeholder {
+  color: #e0ffb8;
+}
+
+/* line 43, resources/assets/styles/components/_tables.scss */
+
+.footable.table thead tr.footable-filtering th .form-group button,
+.footable.table thead tr.footable-filtering th .comment-form p button,
+.comment-form .footable.table thead tr.footable-filtering th p button,
+.footable.table thead tr.footable-filtering th .search-form label button,
+.search-form .footable.table thead tr.footable-filtering th label button {
+  background: none;
+  border: none;
+  color: #e0ffb8;
+  font-size: 18px;
+}
+
+/* line 50, resources/assets/styles/components/_tables.scss */
+
+.footable.table thead tr.footable-filtering th .form-group button.dropdown-toggle,
+.footable.table thead tr.footable-filtering th .comment-form p button.dropdown-toggle,
+.comment-form .footable.table thead tr.footable-filtering th p button.dropdown-toggle,
+.footable.table thead tr.footable-filtering th .search-form label button.dropdown-toggle,
+.search-form .footable.table thead tr.footable-filtering th label button.dropdown-toggle {
+  display: none !important;
+}
+
+/* line 58, resources/assets/styles/components/_tables.scss */
+
+.footable tbody tr {
+  border-bottom: dashed 2px #92bc5c;
+  padding: 2rem 0;
+}
+
+/* line 63, resources/assets/styles/components/_tables.scss */
+
+.footable tbody td {
+  color: #007276;
+  font-size: 20px;
+  padding: 1rem 0 !important;
+}
+
+/* line 68, resources/assets/styles/components/_tables.scss */
+
+.footable tbody td span {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e9725d;
+}
+
 /* line 10, resources/assets/styles/layouts/_header.scss */
 
 header svg {
@@ -20236,6 +20384,30 @@ button:focus {
 .page-template-events-blade-php header .nav-primary ul.nav li.menu-item a {
   color: #fff;
   border-right: 2px dotted #fff;
+}
+
+/* line 3, resources/assets/styles/layouts/_sidebar.scss */
+
+.vendors .content h2,
+.vendors .content .nav-mobile ul.nav li.menu-item a,
+.nav-mobile ul.nav li.menu-item .vendors .content a {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+/* line 8, resources/assets/styles/layouts/_sidebar.scss */
+
+.vendors .content h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* line 13, resources/assets/styles/layouts/_sidebar.scss */
+
+.vendors .content p {
+  font-size: 20px;
+  color: #007276;
+  line-height: 30px;
 }
 
 /* line 1, resources/assets/styles/layouts/_footer.scss */

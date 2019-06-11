@@ -7850,7 +7850,7 @@ Router.prototype.loadEvents = function loadEvents () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony default export */ __webpack_exports__["a"] = ({
+/* WEBPACK VAR INJECTION */(function($, jQuery) {/* harmony default export */ __webpack_exports__["a"] = ({
   init: function init() {
     // JavaScript to be fired on all pages
     $('.hamburger').click(function() {
@@ -7876,6 +7876,10 @@ Router.prototype.loadEvents = function loadEvents () {
       $('main section').slickLightbox({
         itemSelector: '.slick',
       });
+
+    (function ($) {
+      $('table').footable();
+    })(jQuery);
 
       // Select all links with hashes
         $('a[href*="#"]')
@@ -7919,7 +7923,7 @@ Router.prototype.loadEvents = function loadEvents () {
 
 
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(0)))
 
 /***/ }),
 /* 13 */

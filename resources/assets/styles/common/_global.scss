@@ -115,7 +115,6 @@ img {
     div {
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
   }
 
@@ -127,6 +126,20 @@ img {
 
     &:hover {
       text-decoration: none;
+    }
+
+    &.download {
+      margin-left: 1.5rem;
+      font-size: 18px;
+
+      &::before {
+        display: block;
+        content: "\f0ab";
+        color: $bountiful-rose;
+        position: absolute;
+        left: 2rem;
+        font-family: fontawesome, Arial, Helvetica, sans-serif;
+      }
     }
   }
 }

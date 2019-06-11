@@ -1,0 +1,75 @@
+.footable.table thead {
+  tr.footable-header {
+    border: solid $bountiful-green !important;
+    border-width: 2px 0 !important;
+
+    th {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 400;
+      border: none !important;
+      color: $bountiful-green;
+      padding: 1rem 0;
+
+      span.fooicon {
+        margin-left: 10px;
+        font-size: 16px;
+        position: relative;
+        bottom: 4px;
+      }
+    }
+  }
+
+  tr.footable-filtering th {
+    padding: 0;
+    border: none !important;
+
+    .form-group {
+      background: $bountiful-green;
+      padding: 0.5rem;
+
+      input {
+        background: none;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+        font-size: 18px;
+
+        &::placeholder {
+          color: #e0ffb8;
+        }
+      }
+
+      button {
+        background: none;
+        border: none;
+        color: #e0ffb8;
+        font-size: 18px;
+      }
+
+      button.dropdown-toggle {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.footable tbody {
+  tr {
+    border-bottom: dashed 2px $bountiful-green;
+    padding: 2rem 0;
+  }
+
+  td {
+    color: $bountiful-turquoise;
+    font-size: 20px;
+    padding: 1rem 0 !important;
+
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $bountiful-rose;
+    }
+  }
+}
