@@ -17,8 +17,8 @@
         <p>With more shopping hours than any other farmers' markets in Edmonton, we bring you greater access to local products, and create more opportunities for you to make meaningful connections with local producers and makers.</p>
         <h3>Become a vendor!</h3>
         <p>We’re always accepting applications for new vendors.</p>
-        <p><a href="" class="download">Download Vendor Booklet</a></p>
-        <p><a href="" class="download">Vendor Application Form</a></p>
+        <p><a href="https://bountifulmarkets.com/VendorBooklet_2019.pdf" target="_blank" class="download">Download Vendor Booklet</a></p>
+        <p><a href="https://bountifulmarkets.com/2019-Vendor-Application.pdf" target="_blank" class="download">Vendor Application Form</a></p>
       </div>
     </section>
   @endwhile
