@@ -3,6 +3,7 @@ import 'jquery';
 import 'slick-carousel/slick/slick.min.js';
 import 'slick-lightbox/dist/slick-lightbox.min.js';
 import 'lazysizes/lazysizes.js';
+import '@fortawesome/fontawesome-free/js/all.min.js';
 
 // Import everything from autoload
 import './autoload/**/*'

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/app/themes/bountiful/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 16);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -72,15 +72,15 @@ module.exports = jQuery;
 
 /***/ }),
 
-/***/ 16:
+/***/ 20:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(17);
+module.exports = __webpack_require__(21);
 
 
 /***/ }),
 
-/***/ 17:
+/***/ 21:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
