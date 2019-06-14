@@ -20849,15 +20849,16 @@ footer svg {
   max-width: 450px;
   max-height: 125px;
   padding: 1rem 3rem;
-}
-
-/* line 96, resources/assets/styles/layouts/_footer.scss */
-
-.sponsors img:nth-of-type(odd) {
   border-right: solid 2px #8e1821;
 }
 
-/* line 101, resources/assets/styles/layouts/_footer.scss */
+/* line 97, resources/assets/styles/layouts/_footer.scss */
+
+.sponsors img:nth-last-of-type {
+  border-right: none;
+}
+
+/* line 102, resources/assets/styles/layouts/_footer.scss */
 
 .sponsors h4 {
   color: #fff;

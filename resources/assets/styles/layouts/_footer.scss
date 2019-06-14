@@ -92,9 +92,10 @@ footer {
     max-width: 450px;
     max-height: 125px;
     padding: 1rem 3rem;
+    border-right: solid 2px #8e1821;
 
-    &:nth-of-type(odd) {
-      border-right: solid 2px #8e1821;
+    &:nth-last-of-type() {
+      border-right: none;
     }
   }
 
