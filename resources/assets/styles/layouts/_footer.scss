@@ -94,7 +94,7 @@ footer {
     padding: 1rem 3rem;
     border-right: solid 2px #8e1821;
 
-    &:nth-last-of-type() {
+    &:nth-last-of-type(1) {
       border-right: none;
     }
   }

@@ -20854,7 +20854,7 @@ footer svg {
 
 /* line 97, resources/assets/styles/layouts/_footer.scss */
 
-.sponsors img:nth-last-of-type {
+.sponsors img:nth-last-of-type(1) {
   border-right: none;
 }
 
