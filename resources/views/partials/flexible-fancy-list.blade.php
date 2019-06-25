@@ -26,7 +26,6 @@
         <div class="modal-body">
           <h2>Find out more about becoming a vendor!</h2>
           <p>Be one of the first to join us in setting the new standard for Edmonton farmers’ markets! We are currently accepting Vendor Application submissions. Learn more about our year-round multi-day market by downloading:</p>
-          <p><a target="_blank" href="https://bountifulmarkets.com/VendorBooklet_2019.pdf">Vendor Booklet</a></p>
           <p><a target="_blank" href="https://bountifulmarkets.com/2019-Vendor-Application.pdf">Vendor Application Form</a></p>
         </div>
         <div class="modal-footer">
