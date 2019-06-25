@@ -19595,7 +19595,7 @@ section.fancy-list .button {
   top: -2px;
   width: 105%;
   height: 100px;
-  z-index: 1;
+  z-index: 4;
 }
 
 /* line 21, resources/assets/styles/components/_flexible-gallery.scss */
@@ -19609,15 +19609,16 @@ section.fancy-list .button {
   bottom: -1px;
   width: 105%;
   height: 100px;
+  z-index: 4;
 }
 
-/* line 32, resources/assets/styles/components/_flexible-gallery.scss */
+/* line 33, resources/assets/styles/components/_flexible-gallery.scss */
 
 .content section.gallery .image {
   background-color: #92bc5c;
 }
 
-/* line 35, resources/assets/styles/components/_flexible-gallery.scss */
+/* line 36, resources/assets/styles/components/_flexible-gallery.scss */
 
 .content section.gallery .image a {
   display: block;
@@ -19632,7 +19633,7 @@ section.fancy-list .button {
   transition: all 0.6s ease-in-out;
 }
 
-/* line 46, resources/assets/styles/components/_flexible-gallery.scss */
+/* line 47, resources/assets/styles/components/_flexible-gallery.scss */
 
 .content section.gallery .image a:hover {
   opacity: 1;
@@ -19641,7 +19642,7 @@ section.fancy-list .button {
   transition: all 0.8s ease-in-out;
 }
 
-/* line 52, resources/assets/styles/components/_flexible-gallery.scss */
+/* line 53, resources/assets/styles/components/_flexible-gallery.scss */
 
 .content section.gallery .grid-layout {
   display: grid;
@@ -19651,7 +19652,7 @@ section.fancy-list .button {
   grid-auto-rows: minmax(315px, auto);
 }
 
-/* line 60, resources/assets/styles/components/_flexible-gallery.scss */
+/* line 61, resources/assets/styles/components/_flexible-gallery.scss */
 
 .content section.gallery .grid-item {
   background-size: cover;
@@ -19660,7 +19661,7 @@ section.fancy-list .button {
 }
 
 @media (max-width: 991.98px) {
-  /* line 60, resources/assets/styles/components/_flexible-gallery.scss */
+  /* line 61, resources/assets/styles/components/_flexible-gallery.scss */
 
   .content section.gallery .grid-item {
     grid-column-end: span 2;
@@ -19668,7 +19669,7 @@ section.fancy-list .button {
 }
 
 @media (max-width: 767.98px) {
-  /* line 60, resources/assets/styles/components/_flexible-gallery.scss */
+  /* line 61, resources/assets/styles/components/_flexible-gallery.scss */
 
   .content section.gallery .grid-item {
     grid-column-end: span 2;
@@ -19676,14 +19677,14 @@ section.fancy-list .button {
 }
 
 @media (max-width: 575.98px) {
-  /* line 60, resources/assets/styles/components/_flexible-gallery.scss */
+  /* line 61, resources/assets/styles/components/_flexible-gallery.scss */
 
   .content section.gallery .grid-item {
     grid-column-end: span 4;
   }
 }
 
-/* line 78, resources/assets/styles/components/_flexible-gallery.scss */
+/* line 79, resources/assets/styles/components/_flexible-gallery.scss */
 
 .content section.gallery .grid-item:nth-child(5n) {
   grid-column-end: span 2;
@@ -19691,7 +19692,7 @@ section.fancy-list .button {
 }
 
 @media (max-width: 991.98px) {
-  /* line 78, resources/assets/styles/components/_flexible-gallery.scss */
+  /* line 79, resources/assets/styles/components/_flexible-gallery.scss */
 
   .content section.gallery .grid-item:nth-child(5n) {
     min-height: auto;
@@ -19699,7 +19700,7 @@ section.fancy-list .button {
   }
 }
 
-/* line 88, resources/assets/styles/components/_flexible-gallery.scss */
+/* line 89, resources/assets/styles/components/_flexible-gallery.scss */
 
 .content section.gallery .grid-item:nth-child(8n) {
   grid-column-end: span 2;
