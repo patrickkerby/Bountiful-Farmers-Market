@@ -132,15 +132,15 @@ img {
       margin-left: 1.5rem;
       font-size: 18px;
 
-      &::before {
-        display: block;
-        content: "\f0ab";
-        color: $bountiful-rose;
-        position: absolute;
-        left: 2rem;
-        font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;  /* updated font-family */
-        font-weight: 400; /* regular style/weight */
-      }
+      // &::before {
+      //   display: block;
+      //   content: "\f0ab";
+      //   color: $bountiful-rose;
+      //   position: absolute;
+      //   left: 2rem;
+      //   font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;  /* updated font-family */
+      //   font-weight: 400; /* regular style/weight */
+      // }
     }
   }
 }
