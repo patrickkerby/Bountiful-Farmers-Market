@@ -143,6 +143,22 @@ header {
   }
 }
 
+.banner-hero {
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-header h1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 5rem;
+  }
+}
+
 //Hamburger
 .hamburger {
   position: absolute;

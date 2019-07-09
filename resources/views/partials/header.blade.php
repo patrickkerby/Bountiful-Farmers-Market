@@ -2,8 +2,10 @@
   $hero = get_field('background_image');
   $overlay = get_field('overlay');	
   $logo = get_field('logo');
+  $logo_choice = get_field('logo_choice');
   $sub_title = get_field('sub_title');
   $url = home_url();
+
 @endphp
 
 <nav class="nav-mobile">
@@ -37,8 +39,12 @@
     </nav>
   </div>
   @if ($hero)
-    <div class="banner row justify-content-center" style="background-image: radial-gradient(50% 55%, rgba(33,59,60,0.41) 37%, rgba(33,59,60,0.06) 64%), url('{{ $hero }}');">
-      <img data-src="{{$logo}}" alt="Bountiful Farmers' Market" class="lazyload" />  
+    <div class="banner banner-hero row justify-content-center" style="background-image: radial-gradient(50% 55%, rgba(33,59,60,0.41) 37%, rgba(33,59,60,0.06) 64%), url('{{ $hero }}');">
+      @if ($logo_choice === 'Yes')
+        <img data-src="{{$logo}}" alt="Bountiful Farmers' Market" class="lazyload" />  
+      @else
+        @include('partials.page-header')
+      @endif
     </div>
   @elseif ( tribe_is_event() )
     <div class="banner-events row justify-content-center">

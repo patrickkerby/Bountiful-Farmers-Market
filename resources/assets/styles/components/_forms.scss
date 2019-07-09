@@ -13,6 +13,11 @@ textarea {
   width: 100%;
 }
 
+input[type=checkbox] {
+  width: auto;
+  margin-right: 1rem;
+}
+
 input[type=submit] {
   background: none;
   font-size: 20px;
@@ -31,6 +36,20 @@ form {
     margin: 0;
     list-style-type: none;
   }
+}
+
+h2.gsection_title {
+  margin: 2rem 0 1rem 0;
+}
+
+.gf_left_half {
+  width: 48%;
+  float: left;
+  margin-right: 2%;
+}
+
+textarea.small {
+  max-height: 8rem;
 }
 
 /** Search form */
