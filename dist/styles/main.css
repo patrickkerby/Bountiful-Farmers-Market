@@ -20614,7 +20614,16 @@ header svg {
   line-height: 5rem;
 }
 
-/* line 163, resources/assets/styles/layouts/_header.scss */
+@media (max-width: 767.98px) {
+  /* line 153, resources/assets/styles/layouts/_header.scss */
+
+  .banner-hero .page-header h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+/* line 168, resources/assets/styles/layouts/_header.scss */
 
 .hamburger {
   position: absolute;
@@ -20623,13 +20632,13 @@ header svg {
   z-index: 10;
 }
 
-/* line 169, resources/assets/styles/layouts/_header.scss */
+/* line 174, resources/assets/styles/layouts/_header.scss */
 
 .hamburger.is-active {
   position: fixed;
 }
 
-/* line 174, resources/assets/styles/layouts/_header.scss */
+/* line 179, resources/assets/styles/layouts/_header.scss */
 
 .hamburger-inner,
 .hamburger-inner::before,
@@ -20639,13 +20648,13 @@ header svg {
   outline: none;
 }
 
-/* line 182, resources/assets/styles/layouts/_header.scss */
+/* line 187, resources/assets/styles/layouts/_header.scss */
 
 button:focus {
   outline: none !important;
 }
 
-/* line 187, resources/assets/styles/layouts/_header.scss */
+/* line 192, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile {
   background: #e9725d;
@@ -20658,7 +20667,7 @@ button:focus {
   transition: display 0.6 ease-in-out;
 }
 
-/* line 195, resources/assets/styles/layouts/_header.scss */
+/* line 200, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile ul.nav {
   display: -webkit-box;
@@ -20677,13 +20686,13 @@ button:focus {
   text-align: center;
 }
 
-/* line 204, resources/assets/styles/layouts/_header.scss */
+/* line 209, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile ul.nav li.menu-item {
   margin: 0;
 }
 
-/* line 207, resources/assets/styles/layouts/_header.scss */
+/* line 212, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile ul.nav li.menu-item a {
   color: #fff;
@@ -20691,7 +20700,7 @@ button:focus {
   padding: 15px;
 }
 
-/* line 219, resources/assets/styles/layouts/_header.scss */
+/* line 224, resources/assets/styles/layouts/_header.scss */
 
 .page-template-events-blade-php header {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #007276), to(#026265));
@@ -20700,7 +20709,7 @@ button:focus {
   background-image: linear-gradient(-180deg, #007276 46%, #026265 100%);
 }
 
-/* line 224, resources/assets/styles/layouts/_header.scss */
+/* line 229, resources/assets/styles/layouts/_header.scss */
 
 .page-template-events-blade-php header .nav-primary ul.nav li.menu-item a {
   color: #fff;

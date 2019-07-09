@@ -156,6 +156,11 @@ header {
     font-size: 5rem;
     text-align: center;
     line-height: 5rem;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
   }
 }
 
