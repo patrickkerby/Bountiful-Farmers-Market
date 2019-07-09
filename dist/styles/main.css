@@ -19750,7 +19750,7 @@ section.fancy-list .button {
   width: 100%;
   height: 100px;
   position: absolute;
-  bottom: -101px;
+  bottom: -95px;
   left: 0;
   -webkit-clip-path: ellipse(55% 50% at 50% 0%);
   clip-path: ellipse(55% 50% at 50% 0%);
@@ -20256,6 +20256,12 @@ h2.tribe-events-list-separator-month,
   padding: 0.25rem 1rem;
   font-size: 17px;
   font-weight: 700;
+}
+
+/* line 66, resources/assets/styles/components/_calendar-single.scss */
+
+.event-is-recurring {
+  display: none;
 }
 
 /* line 2, resources/assets/styles/components/_tables.scss */
