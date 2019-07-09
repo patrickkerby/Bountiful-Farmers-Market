@@ -29,4 +29,6 @@
   @endwhile
   @include('partials.content-page')
   @include('partials.mailchimp')
+  @include('partials.sponsors')
+  
 @endsection
