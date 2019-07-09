@@ -94,6 +94,11 @@ footer {
     padding: 1rem 3rem;
     border-right: solid 2px #8e1821;
 
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+      border: none;
+    }
+
     &:nth-last-of-type(1) {
       border-right: none;
     }

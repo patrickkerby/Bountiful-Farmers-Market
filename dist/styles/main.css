@@ -20887,13 +20887,22 @@ footer svg {
   border-right: solid 2px #8e1821;
 }
 
-/* line 97, resources/assets/styles/layouts/_footer.scss */
+@media (max-width: 767.98px) {
+  /* line 90, resources/assets/styles/layouts/_footer.scss */
+
+  .sponsors img {
+    max-width: 100%;
+    border: none;
+  }
+}
+
+/* line 102, resources/assets/styles/layouts/_footer.scss */
 
 .sponsors img:nth-last-of-type(1) {
   border-right: none;
 }
 
-/* line 102, resources/assets/styles/layouts/_footer.scss */
+/* line 107, resources/assets/styles/layouts/_footer.scss */
 
 .sponsors h4 {
   color: #fff;
