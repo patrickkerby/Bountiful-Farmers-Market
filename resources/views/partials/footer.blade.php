@@ -1,8 +1,3 @@
-@php
-  $footer_logo = get_field('logo', 'option');
-  $address = get_field('address', 'option'); 
-@endphp
-
 <footer class="container-fluid">
   <div class="row justify-content-center">
     <div class="col-sm-5 col-md-4">

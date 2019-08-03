@@ -27,7 +27,7 @@
     </span>
   </button>
 
-  <div class="row">
+  <div class="row navigation">
     <div class="brand col-sm-4">
     <h1 class="page-title"><a href="{{ $url }}">@php echo esc_html( get_bloginfo( 'name' ) ); @endphp</a></h1>
       <h2>Your Multi-day Indoor Farmers’ Market in Edmonton.</h2>
@@ -53,6 +53,8 @@
           <h3>At Bountiful Farmers' Market</h3>
       </div>
     </div>
+  @elseif ( is_singular( 'vendors' ) )
+    @include('partials.vendor-header')  
   @else
     <div class="banner banner-sm row justify-content-center no-gutters">
         @include('partials.page-header')  

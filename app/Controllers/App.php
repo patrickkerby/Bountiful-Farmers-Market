@@ -30,4 +30,13 @@ class App extends Controller
         }
         return get_the_title();
     }
+    
+    protected $acf = true;
+
+    public function acf()
+    {
+        add_filter('sober/controller/acf/array', function () {
+            return true;
+        });
+    }
 }
