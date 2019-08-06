@@ -21,9 +21,11 @@
     position: relative;
     padding: 10rem 0 0 0;
     background-image: linear-gradient(180deg, #425e85 47%, #1b3a65 100%);
+    overflow: hidden;
 
     h2 {
-      font-size: 83px;
+      @include fluid-type($min_width, $max_width, 40px, 83px);
+
       color: #fff;
       line-height: 76px;
       font-weight: 600;
@@ -44,13 +46,6 @@
       }
     }
 
-    img {
-      border: solid #fff 10px;
-      box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.11);
-      position: relative;
-      z-index: 1;
-    }
-
     &::after {
       content: "";
       display: block;
@@ -67,12 +62,12 @@
       padding: 0;
       margin: 0;
       display: flex;
-      justify-content: space-between;
 
       li {
         display: inline;
         color: #fff;
         font-weight: 600;
+        margin: 0 1rem 0 0;
 
         span {
           color: #7f9dc6;
@@ -86,6 +81,18 @@
         }
       }
     }
+
+    div.profile-img {
+      display: flex;
+      align-items: center;
+
+      img {
+        border: solid #fff 10px;
+        box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.11);
+        position: relative;
+        z-index: 1;
+      }
+    }
   }
 
   .intro h3 {
@@ -97,6 +104,7 @@
     -webkit-font-smoothing: antialiased;
     padding-bottom: 75px;
     margin-bottom: 75px;
+    background: url(../images/dots-hr.svg) center bottom no-repeat;
   }
 
   .grid-layout {
@@ -121,11 +129,8 @@
     grid-row-end: span 3;
     grid-column-end: span 4;
   }
-}
 
-.facts {
   h4 {
-    background: $bountiful-green;
     color: #fff;
     font-size: 17px;
     letter-spacing: 3.7px;
@@ -133,14 +138,153 @@
     text-align: center;
     height: 37px;
     line-height: 37px;
+    padding: 0 1rem;
+    margin: 0 0 2rem 0;
     align-self: center;
   }
 
-  blockquote {
-    font-size: 32px;
-    color: $bountiful-green;
-    text-align: center;
-    line-height: 41px;
-    font-style: normal;
+  .facts {
+    background: url(../images/dots-hr.svg) center top no-repeat;
+
+    h4 {
+      background: $bountiful-green;
+    }
+
+    blockquote {
+      font-size: 32px;
+      color: $bountiful-green;
+      text-align: center;
+      line-height: 41px;
+      font-style: normal;
+    }
+  }
+
+  .products-list {
+    background: $bountiful-rose-dull;
+    padding-top: 0 !important;
+
+    h4 {
+      background: $bountiful-deepred;
+      position: relative;
+      top: -1.15rem;
+    }
+
+    ul {
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      columns: 2;
+      -webkit-column-rule: 2px solid $bountiful-deepred;
+      -moz-column-rule: 2px solid $bountiful-deepred;
+      column-rule: 2px solid $bountiful-deepred;
+      -webkit-column-gap: 11rem;
+      -moz-column-gap: 11rem;
+      column-gap: 11rem;
+      padding: 4rem 0 0 0;
+      list-style-type: none;
+
+      @include media-breakpoint-down(lg) {
+        -webkit-column-gap: 9rem;
+        -moz-column-gap: 9rem;
+        column-gap: 9rem;
+      }
+
+      @include media-breakpoint-down(md) {
+        -webkit-column-gap: 6rem;
+        -moz-column-gap: 6rem;
+        column-gap: 6rem;
+        padding-top: 2rem;
+      }
+
+      @include media-breakpoint-down(sm) {
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+        padding-top: 0;
+      }
+
+      li {
+        font-size: 26px;
+        color: #fff;
+        line-height: 28px;
+        background: url("../images/chevron.svg") left center no-repeat;
+        padding: 0.75rem 0 0.75rem 1.5rem;
+
+        @include media-breakpoint-down(lg) {
+          font-size: 24px;
+        }
+
+        @include media-breakpoint-down(md) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .vendors-nav {
+    background: $bountiful-beige;
+    padding: 4rem 0;
+    margin-left: -40px;
+    width: 100vw;
+
+    div {
+      justify-content: center;
+    }
+
+    @include media-breakpoint-down(sm) {
+      div {
+        justify-content: flex-start;
+      }
+    }
+
+    h5 {
+      font-size: 17px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #beb79d;
+      letter-spacing: 3.1px;
+    }
+
+    a:link,
+    a:visited,
+    a:active {
+      color: #beb79d;
+      font-size: 40px;
+      font-weight: 200;
+      border: none;
+      line-height: 39px;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    .index a {
+      font-size: 17px;
+      padding: 1rem 0.75rem;
+      margin: 0 0.5rem;
+      border: solid 3px #e4dfcb;
+      font-weight: 600;
+      line-height: 18px;
+      text-transform: uppercase;
+      display: inline;
+
+      @include media-breakpoint-down(sm) {
+        margin: 3rem 0 0 0;
+      }
+    }
+
+    div.previous-icon {
+      background: url("../images/arrow-left.svg") center center no-repeat;
+      width: 3rem;
+    }
+
+    div.next-icon {
+      background: url("../images/arrow-right.svg") center center no-repeat;
+      width: 3rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      div.previous {
+        margin-bottom: 3rem;
+      }
+    }
   }
 }

@@ -2,26 +2,25 @@
 
 @section('content')
   @while(have_posts()) @php the_post() @endphp
- @debug
     <section class="row justify-content-center">
       <div class="col-sm-10 intro">
           <h3>{{ $intro }}</h3>
       </div>
-      <div class="col-sm-5">             
+      <div class="col-10 col-md-5">             
         {!! $content !!}
       </div>
-      <div class="col-sm-5">
+      <div class="col-md-5">
         <div class="gallery grid-layout">
           @forelse($photo_gallery as $image)
-            <a href="{{$image->url}}" class="image grid-item" target="_blank" style="background-image: url('{{$image->url}}');"></a>
+            <a href="{{$image->url}}" class="image grid-item slick" target="_blank" style="background-image: url('{{$image->url}}');"></a>
           @empty
             <p class="alert alert-danger">No Images</p>
           @endforelse
         </div>
       </div>
     </section>
-    <section class="row justify-content-center">
-      <div class="col-sm-6 facts">
+    <section class="row justify-content-center facts">
+      <div class="col-sm-10 col-md-6 facts">
         <h4>Did you know?</h4>
         @forelse($vendor_facts as $vendor_fact)
           <blockquote>{{ $vendor_fact->fact }}</blockquote>
@@ -29,9 +28,9 @@
         @endforelse
       </div>
     </section>
-    <section class="row justify-content-center">
-      <div class="col-sm-12">
-        <h4>Products at Bountiful Farmers' Market</h4>
+    <section class="row justify-content-center products-list">
+      <h4>Products at Market</h4>
+      <div class="col-sm-8 col-md-10">
         <ul>
           @forelse($vendor_products as $vendor_product)
             <li>{{ $vendor_product->product }}</li>
@@ -41,15 +40,13 @@
         </ul>
       </div>
     </section>
-
-    <footer>
-      <nav class="post-nav">
-        <ul class="pager">
-          <li class="previous"><?php previous_post_link( '%link', '&larr; %title' ); ?></li>
-          <li class="next"><?php next_post_link( '%link', '%title &rarr;' ); ?></li>
-        </ul>
-      </nav>
-    </footer>
+    <section class="row no-gutters justify-content-center vendors-nav post-nav">
+      <div class="previous-icon col-md-1 order-md-1 d-none d-md-flex"></div>
+      <div class="previous col-sm-5 col-md-4 order-md-1"><h5>Read about</h5> <?php previous_post_link( '%link', '%title' ); ?></div>
+      <div class="index col-4 col-md-2 order-last order-md-3"><a href="../">See all Vendors</a></div>
+      <div class="next col-sm-5 col-md-4 order-md-4"><h5>Read about</h5> <?php next_post_link( '%link', '%title' ); ?></div>
+      <div class="next-icon col-md-1 order-md-5 d-none d-md-flex"></div>
+    </section>
 
   @endwhile
 @endsection

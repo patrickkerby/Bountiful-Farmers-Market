@@ -7,6 +7,8 @@
 
 /** Slick Carousel items **/
 
+/** Fluid Type **/
+
 /** Import everything from autoload */
 
 /*!
@@ -21041,14 +21043,14 @@ footer svg {
   background-image: -webkit-linear-gradient(top, #425e85 47%, #1b3a65 100%);
   background-image: -o-linear-gradient(top, #425e85 47%, #1b3a65 100%);
   background-image: linear-gradient(180deg, #425e85 47%, #1b3a65 100%);
+  overflow: hidden;
 }
 
-/* line 25, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 26, resources/assets/styles/layouts/_vendor-profiles.scss */
 
 .single-vendors .banner-vendor h2,
 .single-vendors .banner-vendor .nav-mobile ul.nav li.menu-item a,
 .nav-mobile ul.nav li.menu-item .single-vendors .banner-vendor a {
-  font-size: 83px;
   color: #fff;
   line-height: 76px;
   font-weight: 600;
@@ -21057,7 +21059,35 @@ footer svg {
   margin: 0 0 30px 0;
 }
 
-/* line 34, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 41, resources/assets/styles/common/_variables.scss */
+
+.single-vendors .banner-vendor h2,
+.single-vendors .banner-vendor .nav-mobile ul.nav li.menu-item a,
+.nav-mobile ul.nav li.menu-item .single-vendors .banner-vendor a {
+  font-size: 40px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 41, resources/assets/styles/common/_variables.scss */
+
+  .single-vendors .banner-vendor h2,
+  .single-vendors .banner-vendor .nav-mobile ul.nav li.menu-item a,
+  .nav-mobile ul.nav li.menu-item .single-vendors .banner-vendor a {
+    font-size: calc(40px + 43 * ((100vw - 320px) / 1080));
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* line 41, resources/assets/styles/common/_variables.scss */
+
+  .single-vendors .banner-vendor h2,
+  .single-vendors .banner-vendor .nav-mobile ul.nav li.menu-item a,
+  .nav-mobile ul.nav li.menu-item .single-vendors .banner-vendor a {
+    font-size: 83px;
+  }
+}
+
+/* line 36, resources/assets/styles/layouts/_vendor-profiles.scss */
 
 .single-vendors .banner-vendor h2 span,
 .single-vendors .banner-vendor .nav-mobile ul.nav li.menu-item a span,
@@ -21075,17 +21105,7 @@ footer svg {
   margin-bottom: 30px;
 }
 
-/* line 47, resources/assets/styles/layouts/_vendor-profiles.scss */
-
-.single-vendors .banner-vendor img {
-  border: solid #fff 10px;
-  -webkit-box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.11);
-          box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.11);
-  position: relative;
-  z-index: 1;
-}
-
-/* line 54, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 49, resources/assets/styles/layouts/_vendor-profiles.scss */
 
 .single-vendors .banner-vendor::after {
   content: "";
@@ -21098,7 +21118,7 @@ footer svg {
   height: 100px;
 }
 
-/* line 65, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 60, resources/assets/styles/layouts/_vendor-profiles.scss */
 
 .single-vendors .banner-vendor ul {
   list-style-type: none;
@@ -21107,20 +21127,18 @@ footer svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-/* line 72, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 66, resources/assets/styles/layouts/_vendor-profiles.scss */
 
 .single-vendors .banner-vendor ul li {
   display: inline;
   color: #fff;
   font-weight: 600;
+  margin: 0 1rem 0 0;
 }
 
-/* line 77, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 72, resources/assets/styles/layouts/_vendor-profiles.scss */
 
 .single-vendors .banner-vendor ul li span {
   color: #7f9dc6;
@@ -21130,14 +21148,35 @@ footer svg {
   margin-bottom: -30px;
 }
 
-/* line 83, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 78, resources/assets/styles/layouts/_vendor-profiles.scss */
 
 .single-vendors .banner-vendor ul li a {
   color: #7f9dc6;
   font-weight: normal;
 }
 
-/* line 91, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 85, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .banner-vendor div.profile-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 89, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .banner-vendor div.profile-img img {
+  border: solid #fff 10px;
+  -webkit-box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.11);
+          box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.11);
+  position: relative;
+  z-index: 1;
+}
+
+/* line 98, resources/assets/styles/layouts/_vendor-profiles.scss */
 
 .single-vendors .intro h3 {
   font-size: 32px;
@@ -21148,9 +21187,10 @@ footer svg {
   -webkit-font-smoothing: antialiased;
   padding-bottom: 75px;
   margin-bottom: 75px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjA1cHgiIGhlaWdodD0iN3B4IiB2aWV3Qm94PSIwIDAgMjA1IDciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU2LjMgKDgxNzE2KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5Hcm91cDwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJWZW5kb3JzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iVmVuZG9yLVByb2ZpbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02MTcuMDAwMDAwLCAtOTkzLjAwMDAwMCkiIGZpbGw9IiNEQ0RBRDEiPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYxNy41MDAwMDAsIDk5My4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGN4PSIzLjM5NjU1NjQ5IiBjeT0iMy4zOTY1NTY0OSIgcj0iMy4zOTY1NTY0OSI+PC9jaXJjbGU+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsLUNvcHkiIGN4PSIzNS44OTY1NTY1IiBjeT0iMy4zOTY1NTY0OSIgcj0iMy4zOTY1NTY0OSI+PC9jaXJjbGU+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsLUNvcHktMiIgY3g9IjY4Ljg5NjU1NjUiIGN5PSIzLjM5NjU1NjQ5IiByPSIzLjM5NjU1NjQ5Ij48L2NpcmNsZT4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwtQ29weS0zIiBjeD0iMTAxLjg5NjU1NiIgY3k9IjMuMzk2NTU2NDkiIHI9IjMuMzk2NTU2NDkiPjwvY2lyY2xlPgogICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbC1Db3B5LTQiIGN4PSIxMzQuODk2NTU2IiBjeT0iMy4zOTY1NTY0OSIgcj0iMy4zOTY1NTY0OSI+PC9jaXJjbGU+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsLUNvcHktNSIgY3g9IjE2Ny44OTY1NTYiIGN5PSIzLjM5NjU1NjQ5IiByPSIzLjM5NjU1NjQ5Ij48L2NpcmNsZT4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwtQ29weS02IiBjeD0iMjAwLjg5NjU1NiIgY3k9IjMuMzk2NTU2NDkiIHI9IjMuMzk2NTU2NDkiPjwvY2lyY2xlPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=) center bottom no-repeat;
 }
 
-/* line 102, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 110, resources/assets/styles/layouts/_vendor-profiles.scss */
 
 .single-vendors .grid-layout {
   display: grid !important;
@@ -21160,7 +21200,7 @@ footer svg {
   grid-auto-rows: minmax(150px, auto);
 }
 
-/* line 110, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 118, resources/assets/styles/layouts/_vendor-profiles.scss */
 
 .single-vendors .grid-item {
   background-size: cover;
@@ -21173,17 +21213,16 @@ footer svg {
           box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.26);
 }
 
-/* line 120, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 128, resources/assets/styles/layouts/_vendor-profiles.scss */
 
 .single-vendors .grid-item:nth-child(-n+1) {
   grid-row-end: span 3;
   grid-column-end: span 4;
 }
 
-/* line 127, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 133, resources/assets/styles/layouts/_vendor-profiles.scss */
 
-.facts h4 {
-  background: #92bc5c;
+.single-vendors h4 {
   color: #fff;
   font-size: 17px;
   letter-spacing: 3.7px;
@@ -21191,18 +21230,207 @@ footer svg {
   text-align: center;
   height: 37px;
   line-height: 37px;
+  padding: 0 1rem;
+  margin: 0 0 2rem 0;
   -ms-flex-item-align: center;
       align-self: center;
 }
 
-/* line 139, resources/assets/styles/layouts/_vendor-profiles.scss */
+/* line 146, resources/assets/styles/layouts/_vendor-profiles.scss */
 
-.facts blockquote {
+.single-vendors .facts {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjA1cHgiIGhlaWdodD0iN3B4IiB2aWV3Qm94PSIwIDAgMjA1IDciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU2LjMgKDgxNzE2KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5Hcm91cDwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJWZW5kb3JzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iVmVuZG9yLVByb2ZpbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02MTcuMDAwMDAwLCAtOTkzLjAwMDAwMCkiIGZpbGw9IiNEQ0RBRDEiPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYxNy41MDAwMDAsIDk5My4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGN4PSIzLjM5NjU1NjQ5IiBjeT0iMy4zOTY1NTY0OSIgcj0iMy4zOTY1NTY0OSI+PC9jaXJjbGU+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsLUNvcHkiIGN4PSIzNS44OTY1NTY1IiBjeT0iMy4zOTY1NTY0OSIgcj0iMy4zOTY1NTY0OSI+PC9jaXJjbGU+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsLUNvcHktMiIgY3g9IjY4Ljg5NjU1NjUiIGN5PSIzLjM5NjU1NjQ5IiByPSIzLjM5NjU1NjQ5Ij48L2NpcmNsZT4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwtQ29weS0zIiBjeD0iMTAxLjg5NjU1NiIgY3k9IjMuMzk2NTU2NDkiIHI9IjMuMzk2NTU2NDkiPjwvY2lyY2xlPgogICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbC1Db3B5LTQiIGN4PSIxMzQuODk2NTU2IiBjeT0iMy4zOTY1NTY0OSIgcj0iMy4zOTY1NTY0OSI+PC9jaXJjbGU+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsLUNvcHktNSIgY3g9IjE2Ny44OTY1NTYiIGN5PSIzLjM5NjU1NjQ5IiByPSIzLjM5NjU1NjQ5Ij48L2NpcmNsZT4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwtQ29weS02IiBjeD0iMjAwLjg5NjU1NiIgY3k9IjMuMzk2NTU2NDkiIHI9IjMuMzk2NTU2NDkiPjwvY2lyY2xlPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=) center top no-repeat;
+}
+
+/* line 149, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .facts h4 {
+  background: #92bc5c;
+}
+
+/* line 153, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .facts blockquote {
   font-size: 32px;
   color: #92bc5c;
   text-align: center;
   line-height: 41px;
   font-style: normal;
+}
+
+/* line 162, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .products-list {
+  background: #d57974;
+  padding-top: 0 !important;
+}
+
+/* line 166, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .products-list h4 {
+  background: #8e1821;
+  position: relative;
+  top: -1.15rem;
+}
+
+/* line 172, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .products-list ul {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  -webkit-column-rule: 2px solid #8e1821;
+  -moz-column-rule: 2px solid #8e1821;
+  column-rule: 2px solid #8e1821;
+  -webkit-column-gap: 11rem;
+  -moz-column-gap: 11rem;
+  column-gap: 11rem;
+  padding: 4rem 0 0 0;
+  list-style-type: none;
+}
+
+@media (max-width: 1199.98px) {
+  /* line 172, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+  .single-vendors .products-list ul {
+    -webkit-column-gap: 9rem;
+    -moz-column-gap: 9rem;
+    column-gap: 9rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* line 172, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+  .single-vendors .products-list ul {
+    -webkit-column-gap: 6rem;
+    -moz-column-gap: 6rem;
+    column-gap: 6rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 172, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+  .single-vendors .products-list ul {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    padding-top: 0;
+  }
+}
+
+/* line 205, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .products-list ul li {
+  font-size: 26px;
+  color: #fff;
+  line-height: 28px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTBweCIgaGVpZ2h0PSIxNXB4IiB2aWV3Qm94PSIwIDAgMTAgMTUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU2LjMgKDgxNzE2KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5jaGV2cm9uPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlZlbmRvcnMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJWZW5kb3ItUHJvZmlsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTk1LjAwMDAwMCwgLTMyODYuMDAwMDAwKSIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZD0iTTEwMy44Nzk5NDMsMzI5NC4xMjkyOSBMOTguMDM2MjA2OSwzMjk5Ljk3MzAzIEM5Ny44MzU2ODYzLDMzMDAuMTczNTUgOTcuNTkyMTk3NywzMzAwLjI3MzgxIDk3LjMwNTczOTksMzMwMC4yNzM4MSBDOTcuMDE5MjgyLDMzMDAuMjczODEgOTYuNzc1NzkzNCwzMzAwLjE3MzU1IDk2LjU3NTI3MjgsMzI5OS45NzMwMyBMOTUuNjI5OTYyNiwzMjk4Ljk4NDc1IEM5NS40Mjk0NDIsMzI5OC43ODQyMyA5NS4zMjkxODIxLDMyOTguNTQwNzQgOTUuMzI5MTgyMSwzMjk4LjI1NDI5IEM5NS4zMjkxODIxLDMyOTcuOTY3ODMgOTUuNDI5NDQyLDMyOTcuNzI0MzQgOTUuNjI5OTYyNiwzMjk3LjUyMzgyIEw5OS43NTQ5NTI4LDMyOTMuMzk4ODMgTDk1LjYyOTk2MjYsMzI4OS4yNzM4NCBDOTUuNDI5NDQyLDMyODkuMDczMzIgOTUuMzI5MTgyMSwzMjg4LjgyOTgzIDk1LjMyOTE4MjEsMzI4OC41NDMzNyBDOTUuMzI5MTgyMSwzMjg4LjI1NjkxIDk1LjQyOTQ0MiwzMjg4LjAxMzQyIDk1LjYyOTk2MjYsMzI4Ny44MTI5IEw5Ni41NzUyNzI4LDMyODYuODI0NjIgQzk2Ljc3NTc5MzQsMzI4Ni42MjQxIDk3LjAxOTI4MiwzMjg2LjUyMzg0IDk3LjMwNTczOTksMzI4Ni41MjM4NCBDOTcuNTkyMTk3NywzMjg2LjUyMzg0IDk3LjgzNTY4NjMsMzI4Ni42MjQxIDk4LjAzNjIwNjksMzI4Ni44MjQ2MiBMMTAzLjg3OTk0MywzMjkyLjY2ODM2IEMxMDQuMDgwNDY0LDMyOTIuODY4ODggMTA0LjE4MDcyMywzMjkzLjExMjM3IDEwNC4xODA3MjMsMzI5My4zOTg4MyBDMTA0LjE4MDcyMywzMjkzLjY4NTI5IDEwNC4wODA0NjQsMzI5My45Mjg3NyAxMDMuODc5OTQzLDMyOTQuMTI5MjkgWiIgaWQ9ImNoZXZyb24iPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==) left center no-repeat;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+}
+
+@media (max-width: 1199.98px) {
+  /* line 205, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+  .single-vendors .products-list ul li {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* line 205, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+  .single-vendors .products-list ul li {
+    font-size: 20px;
+  }
+}
+
+/* line 223, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .vendors-nav {
+  background: #f9f7ef;
+  padding: 4rem 0;
+  margin-left: -40px;
+  width: 100vw;
+}
+
+/* line 229, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .vendors-nav div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  /* line 234, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+  .single-vendors .vendors-nav div {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+/* line 239, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .vendors-nav h5 {
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #beb79d;
+  letter-spacing: 3.1px;
+}
+
+/* line 247, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .vendors-nav a:link,
+.single-vendors .vendors-nav a:visited,
+.single-vendors .vendors-nav a:active {
+  color: #beb79d;
+  font-size: 40px;
+  font-weight: 200;
+  border: none;
+  line-height: 39px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* line 259, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .vendors-nav .index a {
+  font-size: 17px;
+  padding: 1rem 0.75rem;
+  margin: 0 0.5rem;
+  border: solid 3px #e4dfcb;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: inline;
+}
+
+/* line 270, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .vendors-nav div.previous-icon {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDRweCIgaGVpZ2h0PSI0M3B4IiB2aWV3Qm94PSIwIDAgNDQgNDMiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU2LjMgKDgxNzE2KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5hcnJvdy1sZWZ0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlZlbmRvcnMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJWZW5kb3ItUHJvZmlsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM2LjAwMDAwMCwgLTM0NTQuMDAwMDAwKSIgc3Ryb2tlPSIjRTRERkNCIiBzdHJva2Utd2lkdGg9IjYiPgogICAgICAgICAgICA8ZyBpZD0iYXJyb3ctbGVmdCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDAuMDIzODEwLCAzNDU2Ljg3MzAxNSkiPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJQYXRoLTIiIHBvaW50cz0iMTYuNTYyMzA2NCAwIDEuMDY1ODE0MWUtMTMgMTkgMTYuNTYyMzA2NCAzOCI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0wLjM1NjY2NTAxNCwxOS4xMDU1ODkxIEwzOS40OTMwNjgsMTkuMTA1NTg5MSIgaWQ9IkxpbmUtNCI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=) center center no-repeat;
+  width: 3rem;
+}
+
+/* line 275, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+.single-vendors .vendors-nav div.next-icon {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDRweCIgaGVpZ2h0PSI0M3B4IiB2aWV3Qm94PSIwIDAgNDQgNDMiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU2LjMgKDgxNzE2KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5hcnJvdy1yaWdodDwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJWZW5kb3JzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iVmVuZG9yLVByb2ZpbGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzYwLjAwMDAwMCwgLTM0NTQuMDAwMDAwKSIgc3Ryb2tlPSIjRTRERkNCIiBzdHJva2Utd2lkdGg9IjYiPgogICAgICAgICAgICA8ZyBpZD0iYXJyb3ctcmlnaHQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzODAuMDAwMDAwLCAzNDc1Ljg3MzAxNSkgc2NhbGUoLTEsIDEpIHRyYW5zbGF0ZSgtMTM4MC4wMDAwMDAsIC0zNDc1Ljg3MzAxNSkgdHJhbnNsYXRlKDEzNjAuMDAwMDAwLCAzNDU2Ljg3MzAxNSkiPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJQYXRoLTIiIHBvaW50cz0iMTYuNTYyMzA2NCAwIDEuMDY1ODE0MWUtMTMgMTkgMTYuNTYyMzA2NCAzOCI+PC9wb2x5bGluZT4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0wLjM1NjY2NTAxNCwxOS4xMDU1ODkxIEwzOS40OTMwNjgsMTkuMTA1NTg5MSIgaWQ9IkxpbmUtNCI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=) center center no-repeat;
+  width: 3rem;
+}
+
+@media (max-width: 991.98px) {
+  /* line 281, resources/assets/styles/layouts/_vendor-profiles.scss */
+
+  .single-vendors .vendors-nav div.previous {
+    margin-bottom: 3rem;
+  }
 }
 
 /* line 1, resources/assets/styles/layouts/_tinymce.scss */
