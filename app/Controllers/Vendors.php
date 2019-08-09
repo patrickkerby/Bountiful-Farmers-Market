@@ -13,9 +13,10 @@ class Vendors extends Controller
           'posts_per_page'=>'200',
       ]);
   
-      return array_map(function ($post) {
-          return apply_filters('the_content', $post->post_content);
-      }, $vendor_items);
+    return array_map(function ($post) {
+        return [
+            'title' => get_the_title($post->ID),
+        ];
+    }, $vendor_items);
   }
-  
 }

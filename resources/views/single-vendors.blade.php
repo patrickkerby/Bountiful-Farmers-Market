@@ -20,7 +20,7 @@
       </div>
     </section>
     <section class="row justify-content-center facts">
-      <div class="col-sm-10 col-md-6 facts">
+      <div class="col-sm-10 col-md-6">
         <h4>Did you know?</h4>
         @forelse($vendor_facts as $vendor_fact)
           <blockquote>{{ $vendor_fact->fact }}</blockquote>
