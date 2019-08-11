@@ -4,7 +4,7 @@
         @php the_field('address', 'option'); @endphp
     </div>
     <div class="col-sm-5 col-md-4">
-      <img src="{{ $footer_logo }}" />
+      <img src="@php the_field('logo', 'option'); @endphp" />
     </div>
     <div class="col-sm-5 col-md-4 d-none d-md-flex">
       <nav class="nav-primary">
