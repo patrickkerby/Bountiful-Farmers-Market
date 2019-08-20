@@ -56,6 +56,16 @@
       bottom: 0;
       width: 105%;
       height: 100px;
+
+      @include media-breakpoint-up(lg) {
+        height: 60px;
+        background-size: cover;
+        background-position: top center;
+      }
+
+      @include media-breakpoint-up(xl) {
+        height: 50px;
+      }
     }
 
     ul {
