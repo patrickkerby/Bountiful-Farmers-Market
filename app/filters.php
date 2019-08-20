@@ -91,22 +91,3 @@ add_filter('comments_template', function ($comments_template) {
 }, 100);
 
 remove_filter('the_content', 'wpautop');
-
-function the_title_trim($title) {
-
-	$title = attribute_escape($title);
-
-	$findthese = array(
-		'#Protected:#',
-		'#Private:#'
-	);
-
-	$replacewith = array(
-		'Vendors Only: ', // What to replace "Protected:" with
-		'Vendors Only: ' // What to replace "Private:" with
-	);
-
-	$title = preg_replace($findthese, $replacewith, $title);
-	return $title;
-}
-add_filter('the_title', 'the_title_trim');
