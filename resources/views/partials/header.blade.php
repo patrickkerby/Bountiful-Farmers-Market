@@ -51,6 +51,7 @@
       <div class="col-sm-7">
           <h2>Weekly Events</h2>
           <h3>At Bountiful Farmers' Market</h3>
+          <p>Interested in becoming a performer on our Events Stage? <a href="https://bountifulmarkets.com/performance-application/">Apply here!</a></p>
       </div>
     </div>
   @elseif ( is_singular( 'vendors' ) )
