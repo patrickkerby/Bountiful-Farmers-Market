@@ -12,7 +12,7 @@
         @if ( $vendor_social->instagram )
           <li><a href="//instagram.com/{{ $vendor_social->instagram }}" target="_blank"><img src="@asset('images/instagram.svg')" /></a></li>
         @endif          
-          <li><a href="mailto://{{ $vendor_social->email }}" target="_blank"><img src="@asset('images/email.svg')" /></a></li>
+          <li><a href="mailto:{{ $vendor_social->email }}?subject=Mail from Bountiful Farmers' Market Website" target="_blank"><img src="@asset('images/email.svg')" /></a></li>
         @if ( $vendor_social->website )
           <li class="website"><a href="//{{ $vendor_social->website }}" target="_blank">{{ $vendor_social->website }}</a></li>
         @endif
