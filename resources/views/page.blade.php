@@ -27,7 +27,11 @@
       endif;        
     @endphp
   @endwhile
-  @include('partials.content-page')
+  <section class="row justify-content-center">
+    <div class="col-sm-9">
+      @include('partials.content-page')
+    </div>
+  </section>
   @include('partials.mailchimp')
   @include('partials.sponsors')
   
