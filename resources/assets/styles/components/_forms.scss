@@ -1,6 +1,14 @@
-label {
+label,
+label.gfield_label_before_complex {
+  font-size: 18px;
+  font-weight: 600;
   color: $bountiful-green;
+}
+
+.field_sublabel_above label,
+.gfield_checkbox label {
   font-size: 16px;
+  font-weight: 400;
 }
 
 input,
