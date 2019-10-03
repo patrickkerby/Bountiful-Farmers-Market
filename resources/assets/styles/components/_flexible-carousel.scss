@@ -13,8 +13,11 @@ section.slider {
   .carousel-item {
     padding: 5rem;
     min-height: 500px;
-    max-height: 85vh;
     display: none;
+
+    @include media-breakpoint-down(sm) {
+      padding: 2rem;
+    }
 
     div {
       background-size: cover;
