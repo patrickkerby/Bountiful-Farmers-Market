@@ -21,6 +21,23 @@ $more = false;
 ?>
 
 <div class="tribe-events-loop">
+<?php
+		$events = tribe_get_events( [ 
+			'posts_per_page' => 1, 
+			'featured'       => true,
+	 ] );
+
+		foreach ( $events as $post ) {
+			setup_postdata( $post );
+		?>
+<div class="tribe-event-featured-custom">
+		<?php
+			tribe_get_template_part( 'list/single-featured' );
+		?>	
+			</div>
+		<?php	
+		}	
+?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php do_action( 'tribe_events_inside_before_loop' ); ?>
@@ -35,17 +52,9 @@ $more = false;
 		<div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes() ?>" <?php echo $post_parent; ?>>
 					<!-- Month / Year Headers -->
 		<?php tribe_events_list_the_date_headers(); ?>
-			<?php
-			$event_type = tribe( 'tec.featured_events' )->is_featured( $post->ID ) ? 'featured' : 'event';
 
-			/**
-			 * Filters the event type used when selecting a template to render
-			 *
-			 * @param $event_type
-			 */
-			$event_type = apply_filters( 'tribe_events_list_view_event_type', $event_type );
-
-			tribe_get_template_part( 'list/single', $event_type );
+		<?php
+			tribe_get_template_part( 'list/single-event' );
 			?>
 		</div>
 
