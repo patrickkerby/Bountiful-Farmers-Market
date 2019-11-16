@@ -12,7 +12,8 @@ label.gfield_label_before_complex {
 }
 
 input,
-textarea {
+textarea,
+select {
   background: $bountiful-beige;
   border: none;
   padding: 1rem;
@@ -21,7 +22,12 @@ textarea {
   width: 100%;
 }
 
-input[type=checkbox] {
+select {
+  height: 3rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
   width: auto;
   margin-right: 1rem;
 }
@@ -58,6 +64,14 @@ h2.gsection_title {
 
 textarea.small {
   max-height: 8rem;
+}
+
+.gfield_description {
+  margin-bottom: 2rem;
+}
+
+li.gfield {
+  margin-bottom: 1rem;
 }
 
 /** Search form */
