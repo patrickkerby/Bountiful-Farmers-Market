@@ -3,6 +3,7 @@
 @section('content')
 
 <section class="row justify-content-center">
+
   <div class="col-sm-8">
     @if (!have_posts())
       <div class="alert alert-warning">

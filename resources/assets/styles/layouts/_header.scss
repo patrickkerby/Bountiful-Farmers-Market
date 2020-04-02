@@ -1,3 +1,30 @@
+.announcement {
+  margin-top: 60px;
+}
+
+.sitewide-announcement {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  padding: 2rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: $bountiful-green;
+  box-shadow: #33333326 18px 0 20px;
+  color: #fff;
+  justify-content: center;
+  align-content: center;
+  z-index: 999;
+}
+
+.sitewide-announcement p {
+  margin: 0;
+  padding: 0;
+}
+
 .banner .nav li {
   @extend .nav-item;
 }
