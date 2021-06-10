@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .announcement {
   margin-top: 60px;
 }
@@ -34,7 +35,7 @@
 }
 
 header {
-  svg {
+  svg.ribbon {
     height: 14px;
     position: absolute;
     top: 0;
@@ -101,6 +102,10 @@ header {
     border: none;
     padding-right: none;
   }
+}
+
+.contests header .nav-primary .menu-item a {
+  border-right: 2px dotted $bountiful-deepred;
 }
 
 .banner {
@@ -264,3 +269,108 @@ button:focus {
   color: #fff;
   border-right: 2px dotted #fff;
 }
+
+.banner-vendor,
+.banner-contest {
+  position: relative;
+  padding: 10rem 0 4rem 0;
+  margin-bottom: -10px;
+  background-image: linear-gradient(180deg, #425e85 47%, #1b3a65 100%);
+  overflow-x: hidden;
+
+  h2 {
+    @include fluid-type($min_width, $max_width, 40px, 83px);
+
+    color: #fff;
+    line-height: 76px;
+    font-weight: 600;
+    border-bottom: solid 2px #fff;
+    padding: 0 0 30px 0;
+    margin: 0 0 30px 0;
+
+    span {
+      font-size: 17px;
+      letter-spacing: 3.71px;
+      line-height: 20px;
+      width: 100%;
+      text-transform: uppercase;
+      display: inline-flex;
+      border-bottom: solid 2px #fff;
+      padding: 30px 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background: url(../images/vendor-swoosh.svg) no-repeat bottom center;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    width: 105%;
+    height: 100px;
+
+    @include media-breakpoint-up(lg) {
+      height: 60px;
+      background-size: cover;
+      background-position: top center;
+    }
+
+    @include media-breakpoint-up(xl) {
+      height: 50px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    li {
+      display: inline-flex;
+      color: #fff;
+      font-weight: 600;
+      margin: 0 1rem 0 0;
+      min-width: 1rem;
+      width: auto;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      span {
+        color: #7f9dc6;
+        display: flex;
+        margin-bottom: -30px;
+      }
+
+      a {
+        color: #7f9dc6;
+        font-weight: normal;
+      }
+    }
+  }
+
+  div.profile-img {
+    display: flex;
+    align-items: center;
+
+    img {
+      border: solid #fff 10px;
+      box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.11);
+      position: relative;
+      z-index: 11;
+      margin-bottom: 0;
+      bottom: -2rem;
+    }
+  }
+}
+
+.banner-contest {
+  background-image: linear-gradient(180deg, #f4885d 47%, #b83b09 100%);
+
+  ul li a {
+    color: #fff;
+  }
+}
+/* stylelint-enable no-descending-specificity */

@@ -1,0 +1,197 @@
+.contests section {
+  padding: 0;
+  margin: 7rem 0;
+}
+
+section.intro {
+  margin: 0;
+}
+
+section.vote {
+  margin: 0 0 7rem 0;
+
+  @include media-breakpoint-down(sm) {
+    div {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.contests .modal {
+  z-index: 1000000;
+}
+
+.contests h2 {
+  margin-bottom: 25px;
+
+  @include media-breakpoint-down(sm) {
+    line-height: 1.15;
+    font-size: 27px;
+  }
+}
+
+.contests h4 {
+  background: #92bc5c;
+  align-self: unset;
+}
+
+.contests p {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.contests a.modal-link {
+  margin: 1rem 0 3rem 0;
+  align-self: start;
+}
+
+section.competitors {
+  img {
+    margin-bottom: 1rem;
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 3rem;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  a.recipe {
+    margin: 1rem 0 0 0;
+    align-self: start;
+  }
+
+  @include media-breakpoint-down(sm) {
+    div {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+section.winners {
+  background: #f9f7ef;
+  border-top: dotted 4px #92bc5c;
+  padding: 7rem 0;
+  margin: 7rem -40px 0 -40px;
+
+  div.single-winner {
+    justify-content: center;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .multi-winners {
+    h3,
+    p {
+      text-align: center;
+    }
+  }
+
+  img {
+    border: solid 8px #fff;
+    box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.11);
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .caption {
+    color: #fff;
+    font-size: 15px;
+    background: $bountiful-green;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    bottom: -1rem;
+    max-width: 75%;
+  }
+
+  .bios {
+    margin: 0;
+
+    h3 {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 27px;
+    }
+  }
+}
+
+//Print styles
+
+@media print {
+  @page {
+    margin: 0;
+    padding: 0;
+    size: 23in 36in;
+  }
+
+  header,
+  div.wrap,
+  footer {
+    display: none;
+  }
+
+  #poster {
+    padding: 0;
+
+    h2 {
+      font-size: 56px;
+      margin-bottom: 4rem;
+      line-height: 1;
+      text-align: center;
+    }
+
+    section {
+      margin: 4rem 0;
+    }
+
+    div.column {
+      padding: 0 20px;
+    }
+
+    img {
+      min-height: 6in;
+      max-height: 6in;
+      object-fit: cover;
+    }
+
+    h3.title {
+      font-size: 28px;
+      color: #fff;
+      background: $bountiful-orange;
+      text-align: center;
+      padding: 1rem;
+      margin: -2rem 2rem 2rem 2rem;
+      z-index: 10;
+      position: relative;
+    }
+
+    .recipe {
+      margin: 2rem 0;
+    }
+  }
+}

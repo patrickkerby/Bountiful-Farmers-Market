@@ -1,5 +1,6 @@
 label,
-label.gfield_label_before_complex {
+label.gfield_label_before_complex,
+legend.gfield_label {
   font-size: 18px;
   font-weight: 600;
   color: $bountiful-green;
@@ -42,6 +43,14 @@ input[type=submit] {
   align-self: flex-start;
   cursor: pointer;
   width: auto;
+
+  .contests & {
+    background: $bountiful-green;
+    border: none;
+    color: #fff;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+  }
 }
 
 form {
@@ -105,4 +114,29 @@ li.gfield {
   color: $bountiful-green;
   font-weight: 800;
   font-size: 26px;
+}
+
+.gfield_required {
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 3px;
+}
+
+.gfield_radio {
+  .gchoice {
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0;
+
+    label {
+      margin: 0;
+      font-size: 21px;
+      font-weight: 400;
+      color: $bountiful-rose-dull;
+    }
+
+    input {
+      margin: 0 1rem 0 0;
+    }
+  }
 }

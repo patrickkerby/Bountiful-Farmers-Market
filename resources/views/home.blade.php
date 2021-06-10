@@ -33,4 +33,6 @@
 
   @endwhile
   @include('partials.mailchimp')
+  @include('partials.sponsors')
+
 @endsection
