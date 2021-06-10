@@ -19,11 +19,12 @@
   <section class="row justify-content-center vote">
     <div class="col-md-6">             
       {!! $content !!}    
-      <h2>Vote Now!</h2>
+      <hr />
       <p>Remember to vote every weekend for your chance to win. <a href="#" data-toggle="modal" data-target="#modal-rules">Check out the prizes and rules here.</a></p>
     </div>
     <div class="col-md-5">      
-      <div class="form">                
+      <div class="form">  
+        <h2>Vote Now!</h2>              
         @php gravity_form( $form, false, false, false, '', true, 12 ); @endphp
       </div>
     </div>
