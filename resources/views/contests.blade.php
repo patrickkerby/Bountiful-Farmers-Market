@@ -25,7 +25,7 @@
     <div class="col-md-5">      
       <div class="form">  
         <h2>Vote Now!</h2>              
-        @php gravity_form( $form, false, false, false, '', true, 12 ); @endphp
+        @php gravity_form( $form, false, true, false, '', true, 12 ); @endphp
       </div>
     </div>
   </section>
