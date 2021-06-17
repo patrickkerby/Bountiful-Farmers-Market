@@ -64,21 +64,25 @@
         @endforeach
       
         @if ($single_photo)            
+        <div class="col-md-10 winner_intro">
+          <h3>{{ $past_winners->title }}</h3>
+          <p>{!! $past_winners->description !!}</p>
+        </div>
           @foreach( $past_winners->winner_photos as $winner )
-            <div class="col-md-4 single-winner">
+            <div class="col-md-3 single-winner">
               <img src="{{ $winner->photo->url }}" />
               @if($winner->photo->caption)
                 <span class="caption">{{ $winner->photo->caption }}</span>
               @endif
             </div>
-            <div class="col-md-5 single-winner">
-              <h3>{{ $winner->title }}</h3>
+            <div class="col-md-7 single-winner">
+              <h3 class="title">{{ $winner->title }}</h3>
               <p>{!! $winner->description !!}</p>
               <a href="#" class="modal-link" data-toggle="modal" data-target="#modal{{ $loop->iteration }}-info">{{ $winner->additional_info_link }}</a>
             </div>
           @endforeach
         @else
-          <div class="col-md-10 multi-winners">
+          <div class="col-md-10 multi-winners winner_intro">
             <h3>{{ $past_winners->title }}</h3>
             <p>{!! $past_winners->description !!}</p>
           </div>
@@ -109,6 +113,75 @@
                 <h3>{{ $winner->title }}</h3>
                 <p>{!! $winner->description !!}</p>
                 <a href="#" class="modal-link" data-toggle="modal" data-target="#modal{{ $loop->iteration }}-info">{{ $winner->additional_info_link }}</a>          
+              </div>
+            @endforeach
+          </section>
+        @endif
+      @endif
+    @endif
+  </section>
+  <section class="row justify-content-center partners">
+    @if( $partners )      
+      @if( $partners->partners_details )
+        {{-- If there's more than 1 photo, display the title and description above the photos  --}}
+        @foreach( $partners->partners_details as $partner )
+          @if ($loop->count > 1)
+            @php 
+              $single_partner = false;
+            @endphp
+          @else
+            @php 
+              $single_partner = true;
+            @endphp
+          @endif
+        @endforeach
+      
+        @if ($single_partner)            
+          @foreach( $partners->partners_details as $partner )
+            <div class="col-md-4 single-winner">
+              <img src="{{ $partner->photo->url }}" />
+              @if($partner->photo->caption)
+                <span class="caption">{{ $partner->photo->caption }}</span>
+              @endif
+            </div>
+            <div class="col-md-5 single-winner">
+              <h3>{{ $partner->title }}</h3>
+              <p>{!! $partner->description !!}</p>
+              <a href="#" class="modal-link" data-toggle="modal" data-target="#modal{{ $loop->iteration }}-info">{{ $partner->additional_info_link }}</a>
+            </div>
+          @endforeach
+        @else
+          <div class="col-md-10 multi-winners">
+            <h3>{{ $partners->title }}</h3>
+            <p>{!! $partners->description !!}</p>
+          </div>
+          @foreach( $partners->partners_details as $partner )
+            @if($loop->count >= 3)
+                <div class="col-md-4">
+                  <img src="{{ $partner->photo->url }}" />
+                  @if($partner->photo->caption)
+                    <span class="caption">{{ $partner->photo->caption }}</span>
+                  @endif
+                </div>  
+            @elseif( $loop->count = 2)
+              <div class="col-md-5">
+                <img src="{{ $partner->photo->url }}" />
+                @if($partner->photo->caption)
+                  <span class="caption">{{ $partner->photo->caption }}</span>
+                @endif
+              </div>
+            @endif
+          @endforeach    
+          
+          <section class="row justify-content-center bios">
+            @foreach( $partners->partners_details as $partner )
+              @php 
+                $col = 12/$loop->count-1;
+              @endphp
+              <div class="col-md-{{ $col }}">
+                <h3>{{ $partner->title }}</h3>
+                <p>{!! $partner->description !!}</p>
+                <a href="#" class="modal-link" data-toggle="modal" data-target="#modal{{ $loop->iteration }}-info">{{ $partner->additional_info_link }}</a>          
               </div>
             @endforeach
           </section>
