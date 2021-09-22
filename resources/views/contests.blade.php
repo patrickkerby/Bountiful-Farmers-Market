@@ -44,7 +44,7 @@
 
       @endphp
       <div class="col-md-{{ $col }}">
-        @if ($item->image->url)
+        @if(!empty($item->image->url))
           <img class="thumb" src="{{ $item->image->url }}" />
         @endif
         <div class="content">
@@ -57,7 +57,7 @@
       </div>
     @endforeach
   </section> 
-  @if( $past_winners )      
+  @if($past_winners->title)   
     <section class="row justify-content-center winners">
       @if( $past_winners->winner_photos )  
         {{-- If there's more than 1 photo, display the title and description above the photos  --}}
@@ -130,7 +130,7 @@
       @endif
     </section>
   @endif
-  @if( $partners )      
+  @if( $partners->partners_details )      
     <section class="row justify-content-center partners">
       @if( $partners->partners_details )
         {{-- If there's more than 1 photo, display the title and description above the photos  --}}
@@ -262,26 +262,28 @@
   </div>
 </div>
 
-@foreach( $past_winners->winner_photos as $winner )
-<!-- Modal -->
-<div class="modal fade" id="modal{{ $loop->iteration }}-info" tabindex="-1" aria-labelledby="#modal{{ $loop->iteration }}-info" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        {!! $winner->additional_info !!}
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+@if(!empty($past_winners->winner_photos))
+  @foreach( $past_winners->winner_photos as $winner )
+  <!-- Modal -->
+  <div class="modal fade" id="modal{{ $loop->iteration }}-info" tabindex="-1" aria-labelledby="#modal{{ $loop->iteration }}-info" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {!! $winner->additional_info !!}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-@endforeach
+  @endforeach
+@endif
 
 <div id="poster" class="d-none d-print-block container-fluid">
   <svg class="ribbon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 14" preserveAspectRatio="none"><g fill="none"><polygon points="0 14 120 14 120 0 0 0" fill="#D57974"/><polygon points="119 14 239 14 239 0 119 0" fill="#E9725D"/><polygon points="238 14 358 14 358 0 238 0" fill="#F4885D"/><polygon points="359 14 479 14 479 0 359 0" fill="#FFE686"/><polygon points="479 14 599 14 599 0 479 0" fill="#92BC5C"/><polygon points="599 14 719 14 719 0 599 0" fill="#264443"/><polygon points="719 14 840 14 840 0 719 0" fill="#007276"/><polygon points="839 14 959 14 959 0 839 0" fill="#354760"/><polygon points="959 14 1079 14 1079 0 959 0" fill="#0F1221"/><polygon points="1079 14 1204 14 1204 0 1079 0" fill="#21275C"/><polygon points="1200 14 1320 14 1320 0 1200 0" fill="#8E1821"/><polygon points="1320 14 1440 14 1440 0 1320 0" fill="#BA2025"/></g></svg>
