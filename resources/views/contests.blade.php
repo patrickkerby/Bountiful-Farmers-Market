@@ -20,20 +20,28 @@
     <div class="col-md-6">             
       {!! $content !!}    
       <hr />
-      <p>Remember to vote every weekend for your chance to win. <a href="#" data-toggle="modal" data-target="#modal-rules">Check out the prizes and rules here.</a></p>
+      <p>{{ $rules_text }} <a href="#" data-toggle="modal" data-target="#modal-rules">{{ $rules_link_text }}</a></p>
     </div>
     <div class="col-md-5">      
       <div class="form">  
-        <h2>Vote Now!</h2>              
+        <h2>{{ $form_title }}</h2>              
         @php gravity_form( $form, false, true, false, '', true, 12 ); @endphp
       </div>
     </div>
   </section>
   <section class="row justify-content-center competitors">
-    <h2 class="col-12">This week's competitors!</h2>
+    <h2 class="col-12">{{ $vendors_title }}</h2>
     @foreach( $content_blocks as $item )
       @php 
-        $col = 12/$loop->count;
+
+        if($loop->count > 4) {
+          $col = 4;
+        }
+        else {
+          $col = 12/$loop->count;
+        }
+
+
       @endphp
       <div class="col-md-{{ $col }}">
         @if ($item->image->url)
@@ -42,13 +50,15 @@
         <div class="content">
           <h5>{{ $item->title }}</h5>
           {!! $item->text !!}
-          <a href="#" class="recipe" data-toggle="modal" data-target="#modal{{ $loop->iteration }}">View Recipe</a>
+          @if($item->recipe)
+            <a href="#" class="recipe" data-toggle="modal" data-target="#modal{{ $loop->iteration }}">View Recipe</a>
+          @endif
         </div>
       </div>
     @endforeach
   </section> 
-  <section class="row justify-content-center winners">
-    @if( $past_winners )      
+  @if( $past_winners )      
+    <section class="row justify-content-center winners">
       @if( $past_winners->winner_photos )  
         {{-- If there's more than 1 photo, display the title and description above the photos  --}}
         @foreach( $past_winners->winner_photos as $winner )
@@ -118,10 +128,10 @@
           </section>
         @endif
       @endif
-    @endif
-  </section>
-  <section class="row justify-content-center partners">
-    @if( $partners )      
+    </section>
+  @endif
+  @if( $partners )      
+    <section class="row justify-content-center partners">
       @if( $partners->partners_details )
         {{-- If there's more than 1 photo, display the title and description above the photos  --}}
         @foreach( $partners->partners_details as $partner )
@@ -187,8 +197,8 @@
           </section>
         @endif
       @endif
-    @endif
-  </section>
+    </section>
+  @endif
 
   
 

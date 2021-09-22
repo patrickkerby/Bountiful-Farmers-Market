@@ -1,6 +1,6 @@
 <div class="banner-contest row justify-content-center">
   <div class="col-md-5">
-    <h2><span>Special Events at Bountiful:</span> {!! App::title() !!}</h2>
+    <h2><span>{{ $intro_subtitle }}</span> {!! App::title() !!}</h2>
     <ul>
         <li class="twitter">
           <a href="" target="_blank">
