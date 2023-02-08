@@ -12,6 +12,10 @@ legend.gfield_label {
   font-weight: 400;
 }
 
+fieldset {
+  margin: 1.5rem 0;
+}
+
 input,
 textarea,
 select {
@@ -129,7 +133,7 @@ li.gfield {
     margin: 0.5rem 0;
 
     label {
-      margin: 0;
+      margin: 0 0.75rem 0 0;
       font-size: 21px;
       font-weight: 400;
       color: $bountiful-rose-dull;
@@ -145,4 +149,9 @@ li.gfield {
   font-size: 14px;
   margin-bottom: 2rem;
   color: #666;
+}
+
+.content section div.gchoice {
+  flex-direction: row;
+  align-items: baseline;
 }
