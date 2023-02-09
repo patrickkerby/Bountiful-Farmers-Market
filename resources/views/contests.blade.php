@@ -31,7 +31,7 @@
       </div>
     </div>
   </section>
-  @if($content_blocks)
+  @if($vendors_title)
     <section class="row justify-content-center competitors">
       <h2 class="col-12">{{ $vendors_title }}</h2>
       @foreach( $content_blocks as $item )
