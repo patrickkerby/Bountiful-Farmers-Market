@@ -12,51 +12,52 @@
 @section('content')
 
   <section class="row justify-content-center intro no-gutters">
-    <div class="col-md-10">
-        <h3>{{ $intro }}</h3>
-    </div>
+    @if($intro)
+      <div class="col-md-10">
+          <h3>{{ $intro }}</h3>
+      </div>
+    @endif
   </section>
   <section class="row justify-content-center vote">
-    <div class="col-md-6">             
+    <div class="col-md-6 order-2 order-sm-1">             
       {!! $content !!}    
       <hr />
       <p>{{ $rules_text }} <a href="#" data-toggle="modal" data-target="#modal-rules">{{ $rules_link_text }}</a></p>
     </div>
-    <div class="col-md-5">      
+    <div class="col-md-5 order-1 order-sm-2">      
       <div class="form">  
         <h2>{{ $form_title }}</h2>              
         @php gravity_form( $form, false, true, false, '', true, 12 ); @endphp
       </div>
     </div>
   </section>
-  <section class="row justify-content-center competitors">
-    <h2 class="col-12">{{ $vendors_title }}</h2>
-    @foreach( $content_blocks as $item )
-      @php 
-
-        if($loop->count > 4) {
-          $col = 4;
-        }
-        else {
-          $col = 12/$loop->count;
-        }
-
-
-      @endphp
-      <div class="col-md-{{ $col }}">
-        @if(!empty($item->image->url))
-          <img class="thumb" src="{{ $item->image->url }}" />
-        @endif
-        <div class="content">
-          <h5>{{ $item->title }}</h5>
-          {!! $item->text !!}
-          @if($item->recipe)
-            <a href="#" class="recipe" data-toggle="modal" data-target="#modal{{ $loop->iteration }}">View Recipe</a>
+  @if($content_blocks)
+    <section class="row justify-content-center competitors">
+      <h2 class="col-12">{{ $vendors_title }}</h2>
+      @foreach( $content_blocks as $item )
+        @php 
+          if($loop->count > 4) {
+            $col = 4;
+          }
+          else {
+            $col = 12/$loop->count;
+          }
+        @endphp
+        <div class="col-md-{{ $col }}">
+          @if(!empty($item->image->url))
+            <img class="thumb" src="{{ $item->image->url }}" />
           @endif
+          <div class="content">
+            <h5>{{ $item->title }}</h5>
+            {!! $item->text !!}
+            @if($item->recipe)
+              <a href="#" class="recipe" data-toggle="modal" data-target="#modal{{ $loop->iteration }}">View Recipe</a>
+            @endif
+          </div>
         </div>
-      </div>
-    @endforeach
-  </section> 
+      @endforeach
+    </section> 
+  @endif
   @if($past_winners->title)   
     <section class="row justify-content-center winners">
       @if( $past_winners->winner_photos )  
