@@ -1,4 +1,4 @@
-<div class="banner-vendor row justify-content-center">
+  <div class="banner-vendor row justify-content-center">
     <div class="col-md-5">
       <h2><span>Vendor Profile:</span> {!! App::title() !!}</h2>
       <ul>

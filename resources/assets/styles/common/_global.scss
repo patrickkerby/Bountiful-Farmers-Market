@@ -187,3 +187,45 @@ body.is-active {
     padding: 10rem 15rem;
   }
 }
+
+.woocontent {
+  margin-top: 4rem;
+
+  p {
+    font-size: 1.025rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.15rem;
+
+    &.price {
+      font-size: 2rem !important;
+      margin: 1rem 0;
+    }
+  }
+
+  div.images.woocommerce-product-gallery {
+    margin-top: 1.5rem;
+  }
+
+  .product_meta {
+    display: none;
+  }
+
+  select {
+    height: auto;
+  }
+}
+
+.woocommerce .col2-set .col-1,
+.woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2 {
+  max-width: none;
+}
+
+.woocommerce-input-wrapper {
+  width: 100%;
+}
+
+.single-product .checkout {
+  margin-top: 4rem;
+}

@@ -58,6 +58,8 @@
     @include('partials.vendor-header')
   @elseif ( is_page_template( 'views/contests.blade.php' ) )
     @include('partials.contest-header')  
+  @elseif (is_woocommerce())
+    {{-- @include('partials.woo-header') --}}
   @else
     <div class="banner banner-sm row justify-content-center no-gutters">
         @include('partials.page-header')  
