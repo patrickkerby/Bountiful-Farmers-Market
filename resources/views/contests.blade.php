@@ -29,7 +29,7 @@
         <h2>{{ $form_title }}</h2>              
         @php gravity_form( $form, false, true, false, '', true, 12 ); @endphp
         <div>
-          {!! $post-form_content !!}
+          {!! $afterform !!}
         </div>
       </div>
     </div>
